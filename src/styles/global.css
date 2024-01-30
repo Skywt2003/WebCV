@@ -1,0 +1,25 @@
+:root {
+    @apply font-serif;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+}
+
+.container {
+    @apply max-w-3xl m-auto mt-16;
+}
+
+.font-kai {
+    font-family: "KaiTi", "KaiTiGB2312", "STKaiti";
+}
+
+ul {
+    @apply ml-6;
+}
+
+li {
+    @apply list-item list-disc;
+}
+
+.date {
+    @apply float-end text-sm font-light text-gray-500;
+}

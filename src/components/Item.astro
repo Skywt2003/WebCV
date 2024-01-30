@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  note?: string;
+  date?: string;
+}
+
+const { title, subtitle = "", note, date = "" } = Astro.props;
+---
+
+<div>
+  <span class="font-semibold mr-4">{title}</span>
+  <span class="font-kai">{subtitle}{note && "^"}</span>
+  <span class="date">{date}</span>
+  {
+    note && (
+      <span class="font-light text-sm text-gray-500 ml-4 block">
+        ^注：
+        <Fragment set:html={note} />
+      </span>
+    )
+  }
+</div>
+
+<style>
+  div {
+    @apply my-1;
+  }
+</style>
