@@ -1,15 +1,21 @@
 ---
 interface Props {
-  title: string;
+  obj: SectionObject;
 }
 
-const { title } = Astro.props;
+const { obj } = Astro.props;
+
+import School from "./School.astro";
+import Project from "./Project.astro";
+import Item from "./Item.astro";
 ---
 
 <div class="my-4">
-  <h2 class="font-bold text-2xl">{title}</h2>
+  <h2 class="font-bold text-2xl uppercase">{obj.title}</h2>
 
   <hr class="my-2" />
 
-  <slot />
+  {obj.schools && obj.schools.map((school) => <School obj={school} />)}
+  {obj.projects && obj.projects.map((project) => <Project obj={project} />)}
+  {obj.items && obj.items.map((item) => <Item obj={item} />)}
 </div>

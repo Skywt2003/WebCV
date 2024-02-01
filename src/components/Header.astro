@@ -1,0 +1,24 @@
+---
+interface Props {
+  obj: Metadata;
+}
+
+const { obj } = Astro.props;
+---
+
+<h1 class="font-bold text-center text-4xl">{obj.name}</h1>
+<p class="text-center mt-4">
+  <span class="mr-4">
+    <i class="ri-phone-line"></i>
+    {obj.phone}
+  </span>
+  <span><i class="ri-mail-line"></i> {obj.email}</span>
+</p>
+
+{
+  obj.intention && (
+    <p class="text-center mt-1">
+      求职意向：<span class="font-kai">{obj.intention}</span>
+    </p>
+  )
+}

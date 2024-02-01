@@ -1,0 +1,133 @@
+metadata:
+  name: Tian Wu
+  phone: (+86) 133-****-****
+  email: me@skywt.cn
+  # intention: 前端开发
+sections:
+  - title: Education
+    schools:
+      - name: Hunan University
+        # college: College of Computer Science and Electronic Engineering
+        major: Information Security
+        degree: Undergraduate
+        date: Sept. 2021 - June. 2025 (expected)
+        majorCourses: Programming, Algorithms and Data Structures, Computer
+          Architecture, Operating System, Database System, Computer
+          Networking, Compilers
+        score: 3.61/4.00, ranked 21%
+  - title: Skills & Certificates
+    items:
+      - title: CCF Certified Software Professional (CSP)
+        subtitle: 290 pts
+      - title: College English Test Level 6 (CET6)
+        subtitle: 566 pts
+      - title: National Information Security Test Program (NISP)
+        subtitle: Level 1
+  - title: Professional Experience
+    projects:
+      - title: HNU Life WeChat Mini Program
+        type: Team Project
+        job: Frontend, Operation and Maintenance
+        date: 2022 - 2023
+        tech: React.js, Taro, TypeScript, WeChat Mini Program
+        desc: Wechat mini program for HNU students to provide class schedule view, score query and other features.
+        items:
+          - 参与项目规划和需求评审会议，确定项目新增的功能
+          - 负责制定部分 API 标准及撰写相关文档
+          - 负责开发部分前端模块，基于项目现有的 React.js 和 Taro 框架进行开发并测试
+      - title: Personal Website & Blog skywt.cn
+        type: Personal Project
+        date: 2017 till now
+        tech: Astro, TypeScript, Tailwind.css, CSS, Docker
+        desc: 记录学习、生活、技术分享等内容。几乎每年都会用新技术重新设计、重构网站。
+        items:
+          - 网站已运行六年，共百余篇文章
+          - 已在服务器上部署数十项自建开源服务并负责运维
+      - title: Typecho Blog Theme Daydream
+        type: Personal Project
+        date: 2022 - 2023
+        tech: PHP, JavaScript, CSS
+        desc: A blog theme for Typecho blog system with multiple features built-in.
+        items:
+          - 阅读相关文档，学习 Typecho 博客主题相关 API
+          - 独立设计主题外观，使用 pico.css 组件库进行网页实现
+          - 使用 PHP 进行代码实现
+          - Open source on <i class="ri-github-line"></i> GitHub and got 68 starts
+      - title: Calm Lock
+        type: Personal Project
+        date: "2024"
+        tech: Swift, SwiftUI, iOS, macOS
+        desc: iOS/macOS software that requires a set time to unlock to view stored content.
+      - title: QNXG Staff Management System
+        type: Team Project
+        job: Backend
+        date: "2023"
+        tech: Go, Gin, MySQL
+        desc: Used for the staff management of QNXG Network Culture Studio of HNU.
+        items:
+          - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等
+          - 参与系统后端开发，使用 Go Gin 框架在后端对 API 进行实现
+      - title: Library Management System
+        type: Team Project
+        job: Backend
+        date: "2022"
+        tech: Python, Flask, MySQL
+        desc: A fully functional library management system. QNXG network culture Studio internship assessment project.
+        items:
+          - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等
+          - 负责编写 API 文档
+          - 负责系统后端开发，基于接口标准，使用 Python Flask 框架进行了对应实现，使用 ORM 操作数据库
+      - title: PasteBurn
+        type: Personal Project
+        date: "2019"
+        tech: jQuery, CSS, PHP, MySQL
+        desc: Support for sharing text, burn after reading web application. High school spare time development.
+        items:
+          - 独立设计并使用 PHP 开发了网站的功能，使用 Bootstrap4 进行页面设计，使用 jQuery、AJAX 等实现前端逻辑，后端使用 MySQL 数据库进行存储
+          - Open source on <i class="ri-github-line"></i> GitHub and got 26 stars
+      - title: Vuecho Blog System
+        type: Personal Project
+        date: "2022"
+        tech: Vue.js, JavaScript, Tailwind.css, CSS
+        desc: Blog system frontend based on Vue.js, using API provided by Typecho.
+        items:
+          - 根据 Typecho RestFul APi 插件提供的 API 标准，使用 Vue.js 构建了前端页面
+          - 使用 axios 进行数据请求，使用 vue-router 进行路由管理
+          - 基于 Tailwind.css 进行网页设计
+  - title: Award Experience
+    items:
+      - title: China Collegiate Programming Contest (CCPC) Guangzhou
+        subtitle: silver award
+        date: "2021"
+      - title: CCF Unprofessional Certified Software Professional (CSP-S)
+        subtitle: first prize
+        date: "2019"
+        note: "Note: In 2019, for policy reasons, CCF organized the National Olympiad in Informatics in Provinces (NOIP) under the name CSP-S. Therefore, the first prize of CSP-S is equivalent to the first prize of the NOIP."
+      - title: Merit Student of HNU
+        date: "2022"
+      - title: Second Class Comprehensive Scholarship, Individual Scholarship of HNU
+        date: 2022, 2023
+      - title: The second Information Security Capture the Flag Competition (CTF) of HNU
+        subtitle: proxime accessit
+        date: "2022"
+      - title: “长城杯”第四届信息安全铁人三项赛（分区赛）
+        subtitle: second prize
+        date: "2023"
+      - title: National College Students Mathematical Contest in Modeling, Hunan area
+        subtitle: second prize
+        date: "2023"
+  - title: Campus Experience
+    items:
+      - title: Information Security Association of HNU (HNUSec)
+        subtitle: President
+        date: Sept. 2023 - now
+      - title: Chuanglian Student Lab (former Microsoft Club)
+        subtitle: President
+        date: Sept. 2023 - now
+      - title: Debate Team of HNU CSEE
+        subtitle: Captain
+        date: July. 2022 - July. 2023
+      - title: HNU CSEE 2023 Orientation Team
+        subtitle: 新生班导
+        date: Sept. 2023
+  - title: Self Evaluation

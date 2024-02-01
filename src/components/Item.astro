@@ -1,23 +1,19 @@
 ---
 interface Props {
-  title: string;
-  subtitle?: string;
-  note?: string;
-  date?: string;
+  obj: ItemObject;
 }
 
-const { title, subtitle = "", note, date = "" } = Astro.props;
+const { obj } = Astro.props;
 ---
 
 <div>
-  <span class="font-semibold mr-4">{title}</span>
-  <span class="font-kai">{subtitle}{note && "^"}</span>
-  <span class="date">{date}</span>
+  <span class="font-semibold mr-4">{obj.title}</span>
+  <span class="font-kai">{obj.subtitle}{obj.note && "^"}</span>
+  <span class="date">{obj.date}</span>
   {
-    note && (
+    obj.note && (
       <span class="font-light text-sm text-gray-500 ml-4 block">
-        ^注：
-        <Fragment set:html={note} />
+        ^<Fragment set:html={obj.note} />
       </span>
     )
   }
