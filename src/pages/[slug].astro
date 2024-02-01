@@ -19,12 +19,21 @@ const data = await getEntry(entry);
 ---
 
 <Layout title="My CV">
-  <main class="container">
-    <Header obj={data.data.metadata} />
+  <main class=`container${data.data.language == "en" ? " english" : ""}`>
+    <Header obj={data.data.metadata} lang={data.data.language} />
     {
       data.data.sections.map((section: SectionObject) => (
-        <Section obj={section} />
+        <Section obj={section} lang={data.data.language} />
       ))
     }
   </main>
 </Layout>
+
+<style>
+  :global(.english .font-kai) {
+    @apply italic text-sm font-serif;
+  }
+  :global(.english) {
+    @apply font-serif;
+  }
+</style>

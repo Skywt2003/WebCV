@@ -3,7 +3,7 @@ metadata:
   name: Tian Wu
   phone: (+86) 133-****-****
   email: me@skywt.cn
-  # intention: 前端开发
+  intention: Frontend Developer
 sections:
   - title: Education
     schools:
@@ -26,9 +26,9 @@ sections:
         subtitle: Level 1
   - title: Professional Experience
     projects:
-      - title: HNU Life WeChat Mini Program
+      - title: HNU Wei Life
         type: Team Project
-        job: Frontend, Operation and Maintenance
+        job: Frontend, Ops
         date: 2022 - 2023
         tech: React.js, Taro, TypeScript, WeChat Mini Program
         desc: Wechat mini program for HNU students to provide class schedule view, score query and other features.
@@ -36,15 +36,15 @@ sections:
           - 参与项目规划和需求评审会议，确定项目新增的功能
           - 负责制定部分 API 标准及撰写相关文档
           - 负责开发部分前端模块，基于项目现有的 React.js 和 Taro 框架进行开发并测试
-      - title: Personal Website & Blog skywt.cn
+      - title: Website & Blog skywt.cn
         type: Personal Project
-        date: 2017 till now
+        date: 2017 - now
         tech: Astro, TypeScript, Tailwind.css, CSS, Docker
         desc: 记录学习、生活、技术分享等内容。几乎每年都会用新技术重新设计、重构网站。
         items:
           - 网站已运行六年，共百余篇文章
           - 已在服务器上部署数十项自建开源服务并负责运维
-      - title: Typecho Blog Theme Daydream
+      - title: Daydream
         type: Personal Project
         date: 2022 - 2023
         tech: PHP, JavaScript, CSS

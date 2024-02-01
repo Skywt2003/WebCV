@@ -1,9 +1,10 @@
 ---
 interface Props {
   obj: SectionObject;
+  lang: string;
 }
 
-const { obj } = Astro.props;
+const { obj, lang } = Astro.props;
 
 import School from "./School.astro";
 import Project from "./Project.astro";
@@ -15,7 +16,10 @@ import Item from "./Item.astro";
 
   <hr class="my-2" />
 
-  {obj.schools && obj.schools.map((school) => <School obj={school} />)}
+  {
+    obj.schools &&
+      obj.schools.map((school) => <School obj={school} lang={lang} />)
+  }
   {obj.projects && obj.projects.map((project) => <Project obj={project} />)}
   {obj.items && obj.items.map((item) => <Item obj={item} />)}
 </div>

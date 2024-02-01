@@ -1,9 +1,10 @@
 ---
 interface Props {
   obj: Metadata;
+  lang: string;
 }
 
-const { obj } = Astro.props;
+const { obj, lang } = Astro.props;
 ---
 
 <h1 class="font-bold text-center text-4xl">{obj.name}</h1>
@@ -18,7 +19,8 @@ const { obj } = Astro.props;
 {
   obj.intention && (
     <p class="text-center mt-1">
-      求职意向：<span class="font-kai">{obj.intention}</span>
+      <span>{lang == "zh" ? "求职意向：" : "Job Intention: "}</span>
+      <span class="font-kai">{obj.intention}</span>
     </p>
   )
 }

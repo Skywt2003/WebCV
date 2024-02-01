@@ -1,9 +1,10 @@
 ---
 interface Props {
   obj: SchoolObject;
+  lang: string;
 }
 
-const { obj } = Astro.props;
+const { obj, lang } = Astro.props;
 ---
 
 <div class="item">
@@ -14,11 +15,11 @@ const { obj } = Astro.props;
   <span class="date">{obj.date}</span>
   <ul>
     <li>
-      <span>主修课程：</span>
+      <span>{lang == "zh" ? "主修课程：" : "Major Courses: "}</span>
       <span class="font-kai">{obj.majorCourses}</span>
     </li>
     <li>
-      <span>学业成绩：</span>
+      <span>{lang == "zh" ? "学业成绩" : "GPA: "}</span>
       <span class="font-kai">{obj.score}</span>
     </li>
   </ul>
