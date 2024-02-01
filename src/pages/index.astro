@@ -1,14 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Section from "../components/Section.astro";
-
-import yml from "./config.yml";
 ---
 
-<Layout title="My CV">
-  <main class="container">
-    <Header obj={yml.metadata} />
-    {yml.sections.map((section: SectionObject) => <Section obj={section} />)}
+<Layout title="WebCV">
+  <main class="w-full h-svh flex flex-col justify-center items-center">
+    <h1 class="text-5xl drop-shadow-xl font-black m-8">我的简历</h1>
+    <form id="form" class="m-8 align-bottom shadow-lg shadow-gray-100">
+      <input
+        id="input"
+        type="text"
+        pattern="[a-z]*"
+        placeholder="all"
+        title="请输入小写字母组成的简历代号"
+        class="p-2 transition-all border rounded-s font-mono"
+        required
+      /><input
+        id="open-btn"
+        type="submit"
+        class="p-2 transition-all border-y border-r rounded-e hover:bg-gray-200 select-none cursor-pointer"
+      />
+    </form>
   </main>
+
+  <script>
+    const form = document.getElementById("form") as HTMLFormElement;
+    const input = document.getElementById("input") as HTMLInputElement;
+    const btn = document.getElementById("open-btn") as HTMLElement;
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      window.open(input.value, "_self");
+    });
+  </script>
 </Layout>

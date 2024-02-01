@@ -1,0 +1,30 @@
+---
+import { getEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("cv");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Section from "../components/Section.astro";
+
+const { entry } = Astro.props;
+
+const data = await getEntry(entry);
+---
+
+<Layout title="My CV">
+  <main class="container">
+    <Header obj={data.data.metadata} />
+    {
+      data.data.sections.map((section: SectionObject) => (
+        <Section obj={section} />
+      ))
+    }
+  </main>
+</Layout>
