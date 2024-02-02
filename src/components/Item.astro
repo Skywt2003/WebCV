@@ -6,7 +6,7 @@ interface Props {
 const { obj } = Astro.props;
 ---
 
-<div>
+<div class="mt-1">
   <span class="font-semibold mr-4">{obj.title}</span>
   <span class="font-kai">{obj.subtitle}{obj.note && "^"}</span>
   <span class="date">{obj.date}</span>
@@ -18,9 +18,3 @@ const { obj } = Astro.props;
     )
   }
 </div>
-
-<style>
-  div {
-    @apply my-1;
-  }
-</style>

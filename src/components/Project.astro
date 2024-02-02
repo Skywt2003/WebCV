@@ -7,14 +7,14 @@ interface Props {
 const { obj, lang } = Astro.props;
 ---
 
-<div>
+<div class="mt-1">
   <span class="font-bold mr-4 w-1/3 inline-block">{obj.title}</span><span
     class="font-bold mr-4 inline-block">{obj.type}</span
   >{obj.job && <span class="font-kai inline-block">{obj.job}</span>}
   <span class="date">{obj.date}</span>
 
-  <p class="font-kai mt-1">{obj.desc}</p>
-  <p>
+  <p class="font-kai">{obj.desc}</p>
+  <p class={lang == "zh" ? "-mt-1" : ""}>
     <span class="font-kai">{lang == "zh" ? "技术栈：" : "Tech Stack: "}</span
     ><span class="italic font-serif text-sm">{obj.tech}</span>
   </p>
@@ -26,9 +26,3 @@ const { obj, lang } = Astro.props;
     }
   </ul>
 </div>
-
-<style>
-  div {
-    @apply my-2;
-  }
-</style>

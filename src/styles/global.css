@@ -5,7 +5,7 @@
 }
 
 .container {
-    @apply max-w-4xl m-auto;
+    @apply max-w-5xl m-auto;
 }
 
 .font-kai {

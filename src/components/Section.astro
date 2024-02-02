@@ -11,10 +11,10 @@ import Project from "./Project.astro";
 import Item from "./Item.astro";
 ---
 
-<div class="my-4">
+<div class="my-2">
   <h2 class="font-bold text-2xl uppercase">{obj.title}</h2>
 
-  <hr class="my-2" />
+  <hr />
 
   {
     obj.schools &&
@@ -28,7 +28,7 @@ import Item from "./Item.astro";
 
   {
     obj.lis && (
-      <ul>
+      <ul class="mt-1">
         {obj.lis.map((li) => (
           <li>
             <Fragment set:html={li} />
