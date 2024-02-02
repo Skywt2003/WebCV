@@ -38,11 +38,12 @@ interface SectionObject {
   schools?: [SchoolObject];
   items?: [ItemObject];
   projects?: [ProjectObject];
+  lis?: [string];
 }
 
 interface Metadata {
   name: string;
   phone: string;
   email: string;
-  intention?: string;
+  intention: string;
 }

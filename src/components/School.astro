@@ -8,19 +8,21 @@ const { obj, lang } = Astro.props;
 ---
 
 <div class="item">
-  <span class="font-bold mr-4">{obj.name}</span>
-  {obj.college && <span class="mr-4">{obj.college}</span>}
-  <span class="mr-4">{obj.major}</span>
-  <span class="font-kai">{obj.degree}</span>
-  <span class="date">{obj.date}</span>
+  <span class="font-bold mr-4">{obj.name}</span>{
+    obj.college && <span class="mr-4">{obj.college}</span>
+  }<span class="mr-4">{obj.major}</span><span class="font-kai"
+    >{obj.degree}</span
+  ><span class="date">{obj.date}</span>
   <ul>
     <li>
-      <span>{lang == "zh" ? "主修课程：" : "Major Courses: "}</span>
-      <span class="font-kai">{obj.majorCourses}</span>
+      <span>{lang == "zh" ? "主修课程：" : "Major Courses: "}</span><span
+        class="font-kai">{obj.majorCourses}</span
+      >
     </li>
     <li>
-      <span>{lang == "zh" ? "学业成绩" : "GPA: "}</span>
-      <span class="font-kai">{obj.score}</span>
+      <span>{lang == "zh" ? "学业成绩：" : "GPA: "}</span><span class="font-kai"
+        >{obj.score}</span
+      >
     </li>
   </ul>
 </div>

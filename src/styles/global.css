@@ -5,7 +5,7 @@
 }
 
 .container {
-    @apply max-w-3xl m-auto mt-16;
+    @apply max-w-4xl m-auto;
 }
 
 .font-kai {
@@ -22,4 +22,8 @@ li {
 
 .date {
     @apply float-end text-sm font-light text-gray-500;
+}
+
+b {
+    @apply font-semibold;
 }

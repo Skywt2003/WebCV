@@ -1,19 +1,24 @@
 ---
 interface Props {
   obj: ProjectObject;
+  lang: string;
 }
 
-const { obj } = Astro.props;
+const { obj, lang } = Astro.props;
 ---
 
 <div>
-  <span class="font-bold mr-4 w-1/3 inline-block">{obj.title}</span>
-  <span class="font-bold mr-4 inline-block">{obj.type}</span>
-  <span class="font-kai inline-block">{obj.job}</span>
+  <span class="font-bold mr-4 w-1/3 inline-block">{obj.title}</span><span
+    class="font-bold mr-4 inline-block">{obj.type}</span
+  >{obj.job && <span class="font-kai inline-block">{obj.job}</span>}
   <span class="date">{obj.date}</span>
 
-  <p class="italic font-serif text-sm">{obj.tech}</p>
-  <p class="font-kai">{obj.desc}</p>
+  <p class="font-kai mt-1">{obj.desc}</p>
+  <p>
+    <span class="font-kai">{lang == "zh" ? "技术栈：" : "Tech Stack: "}</span
+    ><span class="italic font-serif text-sm">{obj.tech}</span>
+  </p>
+
   <ul>
     {
       obj.items &&

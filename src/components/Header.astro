@@ -7,20 +7,27 @@ interface Props {
 const { obj, lang } = Astro.props;
 ---
 
-<h1 class="font-bold text-center text-4xl">{obj.name}</h1>
-<p class="text-center mt-4">
-  <span class="mr-4">
-    <i class="ri-phone-line"></i>
-    {obj.phone}
-  </span>
-  <span><i class="ri-mail-line"></i> {obj.email}</span>
-</p>
-
-{
-  obj.intention && (
-    <p class="text-center mt-1">
-      <span>{lang == "zh" ? "求职意向：" : "Job Intention: "}</span>
-      <span class="font-kai">{obj.intention}</span>
+<div class="relative mt-16">
+  <div>
+    <h1 class="font-bold text-center text-4xl">{obj.name}</h1>
+    <p class="text-center mt-4">
+      <span class="mr-4">
+        <i class="ri-phone-line"></i>
+        {obj.phone}
+      </span>
+      <span><i class="ri-mail-line"></i> {obj.email}</span>
     </p>
-  )
-}
+
+    <p class="text-center mt-1">
+      <span>{lang == "zh" ? "求职意向：" : "Job Intention: "}</span>{}<span
+        class="font-kai">{obj.intention}</span
+      >
+    </p>
+  </div>
+
+  <img
+    src="./photo.jpg"
+    alt="My Photo"
+    class="w-24 absolute right-0 bottom-0"
+  />
+</div>
