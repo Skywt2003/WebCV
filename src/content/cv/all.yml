@@ -93,6 +93,12 @@ sections:
           - 根据 Typecho RestFul APi 插件提供的 API 标准，使用 Vue.js 构建了前端页面
           - 使用 axios 进行数据请求，使用 vue-router 进行路由管理
           - 基于 Tailwind.css 进行网页设计
+      - title: WebCV 简历系统
+        type: 个人项目
+        date: 2024 年
+        tech: Astro, TypeScript, Tailwind.css, CSS
+        desc: 基于 Astro 的网页简历生成管理系统。
+        items:
   - title: 获奖经历
     items:
       - title: 中国大学生程序设计竞赛（CCPC）广州站
