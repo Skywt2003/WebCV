@@ -17,16 +17,6 @@ import Item from "./Item.astro";
   <hr />
 
   {
-    obj.schools &&
-      obj.schools.map((school) => <School obj={school} lang={lang} />)
-  }
-  {
-    obj.projects &&
-      obj.projects.map((project) => <Project obj={project} lang={lang} />)
-  }
-  {obj.items && obj.items.map((item) => <Item obj={item} />)}
-
-  {
     obj.lis && (
       <ul class="mt-1">
         {obj.lis.map((li) => (
@@ -37,4 +27,14 @@ import Item from "./Item.astro";
       </ul>
     )
   }
+
+  {
+    obj.schools &&
+      obj.schools.map((school) => <School obj={school} lang={lang} />)
+  }
+  {
+    obj.projects &&
+      obj.projects.map((project) => <Project obj={project} lang={lang} />)
+  }
+  {obj.items && obj.items.map((item) => <Item obj={item} />)}
 </div>

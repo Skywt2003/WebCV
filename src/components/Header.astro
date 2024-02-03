@@ -25,9 +25,13 @@ const { obj, lang } = Astro.props;
     </p>
   </div>
 
-  <img
-    src="./photo.jpg"
-    alt="My Photo"
-    class="w-24 absolute right-0 bottom-0"
-  />
+  {
+    obj.photo && (
+      <img
+        src={obj.photo}
+        alt="My Photo"
+        class="w-24 absolute right-0 bottom-0"
+      />
+    )
+  }
 </div>

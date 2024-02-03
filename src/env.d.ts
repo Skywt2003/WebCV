@@ -46,4 +46,5 @@ interface Metadata {
   phone: string;
   email: string;
   intention: string;
+  photo?: string;
 }
