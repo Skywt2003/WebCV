@@ -19,9 +19,14 @@ const { obj, lang } = Astro.props;
     </p>
 
     <p class="text-center mt-1">
-      <span>{lang == "zh" ? "求职意向：" : "Job Intention: "}</span>{}<span
-        class="font-kai">{obj.intention}</span
-      >
+      {
+        obj.intention && (
+          <>
+            <span>{lang == "zh" ? "求职意向：" : "Job Intention: "}</span>
+            <span class="font-kai">{obj.intention}</span>
+          </>
+        )
+      }
     </p>
   </div>
 

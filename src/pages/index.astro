@@ -2,25 +2,35 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="WebCV">
-  <main class="w-full h-svh flex flex-col justify-center items-center">
-    <h1 class="text-5xl drop-shadow-xl font-black m-8">我的简历</h1>
-    <form id="form" class="m-8 align-bottom shadow-lg shadow-gray-100">
+<Layout title="我的简历">
+  <main class="w-full sm:w-3/4 mx-auto h-svh flex flex-col justify-center px-4">
+    <h1 class="text-6xl drop-shadow-xl font-black leading-snug my-8">
+      我渴望<br />加入伟大的事业，
+      <br /> 为这个世界创造价值。
+    </h1>
+    <p><b>请输入简历访问代码。</b>暂时只支持桌面端访问。</p>
+    <form id="form" class="my-8 align-bottom">
       <input
         id="input"
         type="text"
         pattern="[a-z]*"
         placeholder="public"
-        title="请输入小写字母组成的简历代号"
-        class="p-2 transition-all border rounded-s font-mono"
+        title="请输入小写字母组成的简历代码"
+        class="p-2 transition-all border rounded-s font-mono shadow-lg shadow-gray-100"
         required
       /><input
         id="open-btn"
         type="submit"
-        class="p-2 transition-all border-y border-r rounded-e hover:bg-gray-200 select-none cursor-pointer"
+        class="p-2 transition-all border-y border-r rounded-e hover:bg-gray-200 select-none cursor-pointer shadow-lg shadow-gray-100"
       />
     </form>
   </main>
+
+  <footer class="w-full fixed bottom-0 text-center my-4 text-gray-400">
+    <p>
+      © 2017-2024 <a href="https://skywt.cn/" class="hover:underline">SkyWT</a>
+    </p>
+  </footer>
 
   <script>
     const form = document.getElementById("form") as HTMLFormElement;
@@ -33,3 +43,21 @@ import Layout from "../layouts/Layout.astro";
     });
   </script>
 </Layout>
+
+<style>
+  :root {
+    font-size: 16px;
+  }
+
+  @screen sm {
+    :root {
+      font-size: 17px;
+    }
+  }
+
+  @screen md {
+    :root {
+      font-size: 18px;
+    }
+  }
+</style>
