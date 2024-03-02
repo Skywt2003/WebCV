@@ -22,18 +22,17 @@ sections:
       - "<b>编程</b>：面向对象编程, 算法与数据结构"
       - "<b>技术</b>：Linux, Docker, Git, ChatGPT"
       - "<b>软技能</b>：高效沟通, 领导力, 团队协作"
-    items:
-      - title: CCF 计算机软件能力认证（CSP）
-        date: 2022 年 9 月
-        subtitle: 290 分，全国排名 4.6%
-      - title: 大学英语六级考试（CET6）
-        date: 2023 年 3 月
-        subtitle: 566 分
-      - title: 国家信息安全水平证书（NISP）
-        date: 2023 年 5 月
-        subtitle: 一级
   - title: 项目经历
     projects:
+      - title: 个人网站及博客 skywt.cn
+        type: 个人项目
+        date: 2017 年 11 月至今
+        tech: Astro, TypeScript, Tailwind.css, CSS, Docker
+        desc: 记录学习、生活、技术分享等内容的个人网站和博客。
+        items:
+          - 网站已运行六年，发布了百余篇文章。
+          - 近乎每年都使用新技术重新设计和重构网站。最新版本使用 Astro、TypeScript 和 Tailwind.css 等技术构建。
+          - 在服务器上部署了数十个自建开源服务，并负责运维。
       - title: 湖大微生活微信小程序
         type: 团队项目
         job: 前端、运维
@@ -44,16 +43,6 @@ sections:
           - 参与项目规划和需求评审会议，确定新增功能。
           - 负责制定部分 API 标准并编写相关文档。
           - 开发和测试部分前端模块，基于项目现有的 React.js 和 Taro 框架。
-          - 产品上线后负责稳定运行。
-      - title: 个人网站及博客 skywt.cn
-        type: 个人项目
-        date: 2017 年 11 月至今
-        tech: Astro, TypeScript, Tailwind.css, CSS, Docker
-        desc: 记录学习、生活、技术分享等内容的个人网站和博客。
-        items:
-          - 网站已运行六年，发布了百余篇文章。
-          - 近乎每年都使用新技术重新设计和重构网站。最新版本使用 Astro、TypeScript 和 Tailwind.css 等技术构建。
-          - 在服务器上部署了数十个自建开源服务，并负责运维。
       - title: Typecho 博客主题 Daydream
         type: 个人项目
         date: 2022 年 3 月 - 2022 年 10 月
@@ -62,12 +51,15 @@ sections:
         items:
           - 独立设计主题外观，使用 pico.css 组件库实现网页效果。
           - 使用 PHP 进行代码实现。
-          - 在 <i class="ri-github-line"></i> GitHub 开源并获得 68 star。
-      - title: Calm Lock
+          - 在 <i class="ri-github-line"></i> GitHub 开源并获得 70 star。
+      - title: Calm Lock App
         type: 个人项目
-        date: 2024 年
+        date: 2024 年 2 月
         tech: Swift, SwiftUI, iOS, macOS
-        desc: 需要等待设定时间才能解锁查看存储内容的 iOS / macOS 软件。
+        desc: 需要等待设定时间才能解锁查看存储内容的 iOS / macOS 软件。Apple Swift Student Challenge 2024 参赛作品。
+        items:
+          - 独立设计 UI / UX，并使用 Swift 和 SwiftUI 进行代码实现。
+          - 从初次接触 Swift、SwiftUI 到开发完成整个 App，仅用时 5 天时间。
       - title: 易千人员管理系统
         type: 团队项目
         job: 后端
@@ -75,54 +67,58 @@ sections:
         tech: Go, Gin, MySQL
         desc: 用于湖南大学“易千网络文化工作室”人员管理。
         items:
-          - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等
-          - 参与系统后端开发，使用 Go Gin 框架在后端对 API 进行实现
+          - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等。
+          - 参与系统后端开发，使用 Go Gin 框架在后端对 API 进行实现。
       - title: 图书管理系统
         type: 团队项目
         job: 后端
-        date: 2022 年
+        date: 2022 年 2 月 - 2022 年 3 月
         tech: Python, Flask, MySQL
         desc: 一个功能完备的图书管理系统。“易千网络文化工作室”实习转正考核项目。
         items:
-          - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等
-          - 负责编写 API 文档
-          - 负责系统后端开发，基于接口标准，使用 Python Flask 框架进行了对应实现，使用 ORM 操作数据库
+          - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等。
+          - 负责编写 API 文档。
+          - 负责系统后端开发，基于接口标准，使用 Python Flask 框架进行了对应实现，使用 ORM 操作数据库。
       - title: PasteBurn 阅后即焚
         type: 个人项目
         date: 2019 年
         tech: jQuery, CSS, PHP, MySQL
         desc: 支持分享文本，阅后即焚的网页程序。高中课余时间开发。
         items:
-          - 独立设计并使用 PHP 开发了网站的功能，使用 Bootstrap4 进行页面设计，使用 jQuery、AJAX 等实现前端逻辑，后端使用 MySQL 数据库进行存储
-          - 在 <i class="ri-github-line"></i> GitHub 开源并获得 26 star
+          - 独立设计并使用 PHP 开发了网站的功能，使用 Bootstrap4 进行页面设计，使用 jQuery、AJAX 等实现前端逻辑，后端使用 MySQL 数据库进行存储。
+          - 在 <i class="ri-github-line"></i> GitHub 开源并获得 26 star。
       - title: Vuecho 博客系统
         type: 个人项目
         date: 2022 年
         tech: Vue.js, JavaScript, Tailwind.css, CSS
         desc: 基于 Vue.js 构建的博客前端，使用 Typecho 博客系统提供的 API。
         items:
-          - 根据 Typecho RestFul APi 插件提供的 API 标准，使用 Vue.js 构建了前端页面
-          - 使用 axios 进行数据请求，使用 vue-router 进行路由管理
-          - 基于 Tailwind.css 进行网页设计
+          - 根据 Typecho RestFul APi 插件提供的 API 标准，使用 Vue.js 构建了前端页面。
+          - 使用 axios 进行数据请求，使用 vue-router 进行路由管理。
+          - 基于 Tailwind.css 进行网页设计。
       - title: WebCV 简历系统
         type: 个人项目
         date: 2024 年
         tech: Astro, TypeScript, Tailwind.css, CSS
         desc: 基于 Astro 的网页简历生成管理系统。
-        items:
-  - title: 获奖经历
+  - title: 证书与获奖经历
     items:
       - title: 中国大学生程序设计竞赛（CCPC）广州站
         subtitle: 银奖
         date: 2021 年 11 月
+      - title: CCF 计算机软件能力认证（CSP）
+        date: 2022 年 9 月
+        subtitle: 290 分，全国排名 4.6%
       - title: CCF 非专业级软件能力认证提高组（CSP-S）
         subtitle: 一等奖
         date: 2019 年 11 月
         note: 2019 年，由于政策原因，CCF 以 CSP-S 的名义举办了全国青少年信息学奥林匹克联赛（NOIP）。<br />因故， CSP-S 一等奖等同于 NOIP 提高组复赛一等奖。
-      - title: 湖南大学校级三好学生
-        date: 2022 年
-      - title: 湖南大学二等综合奖学金、单项奖学金
-        date: 2022 年、2023 年
+      - title: 大学英语六级考试（CET6）
+        date: 2023 年 3 月
+        subtitle: 566 分
+      - title: 国家信息安全水平证书（NISP）
+        date: 2023 年 5 月
+        subtitle: 一级
       - title: 湖南大学第二届信息安全夺旗赛（CTF）校赛
         subtitle: 第二名
         date: 2022 年 10 月
@@ -132,6 +128,10 @@ sections:
       - title: 全国大学生数学建模竞赛（湖南赛区）
         subtitle: 二等奖
         date: 2023 年
+      - title: 湖南大学校级三好学生
+        date: 2022 年
+      - title: 湖南大学二等综合奖学金、单项奖学金
+        date: 2022 年、2023 年
   - title: 校园经历
     items:
       - title: 湖南大学信息安全协会（HNUSec）
