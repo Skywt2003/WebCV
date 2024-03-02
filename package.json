@@ -14,6 +14,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.2.6",
     "remixicon": "^4.1.0",
+    "tailwindcss-animated": "^1.0.1",
     "typescript": "^5.3.3"
   },
   "devDependencies": {

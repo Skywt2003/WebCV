@@ -3,7 +3,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="我的简历">
-  <main class="w-full sm:w-3/4 mx-auto h-svh flex flex-col justify-center px-4">
+  <main
+    class="w-full sm:w-3/4 mx-auto h-svh flex flex-col justify-center px-4 fade-in"
+  >
     <h1 class="text-6xl drop-shadow-xl font-black leading-snug my-8">
       我渴望<br />加入伟大的事业，
       <br /> 为这个世界创造价值。
@@ -45,6 +47,10 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+  .fade-in {
+    @apply animate-fade-up animate-ease-in-out animate-duration-[800ms];
+  }
+
   :root {
     font-size: 16px;
   }
