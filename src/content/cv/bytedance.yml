@@ -1,6 +1,6 @@
 language: zh
 metadata:
-  intention: （未定）
+  intention: 前端开发
 sections:
   - title: 教育背景
     schools:
@@ -17,22 +17,13 @@ sections:
       - skywt-cn
       - hnu-wei-life
       - daydream
-      - calmlock
-      - qnxg-people
       - lib-backend
-      - pasteburn
-      - vuecho
-      - webcv
   - title: 证书与获奖经历
     items:
       - ccpc
       - csp
       - csp-s
       - cet6
-      - nisp
-      - hnu-ctf
-      - greatwall
-      - math-model
       - hnu-meric
       - scholarship
   - title: 校园经历
@@ -40,10 +31,10 @@ sections:
       - hnusec
       - chuanglian
       - debate-team
-      - orientation-team
   - title: 自我评价
     bullets:
       - study-quickly
       - algorithm-foundation
       - good-taste
       - good-communication
+      - bytedance

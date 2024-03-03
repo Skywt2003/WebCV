@@ -1,6 +1,6 @@
 ---
 interface Props {
-  obj: SectionObject;
+  obj: Section;
   lang: string;
 }
 
@@ -9,32 +9,28 @@ const { obj, lang } = Astro.props;
 import School from "./School.astro";
 import Project from "./Project.astro";
 import Item from "./Item.astro";
+import Bullet from "./Bullet.astro";
 ---
 
 <div class="my-2">
   <h2 class="font-bold text-2xl uppercase">{obj.title}</h2>
-
   <hr />
-
   {
-    obj.lis && (
+    obj.schools &&
+      obj.schools.map((school) => <School slug={school} lang={lang} />)
+  }
+  {
+    obj.projects &&
+      obj.projects.map((project) => <Project slug={project} lang={lang} />)
+  }
+  {obj.items && obj.items.map((item) => <Item slug={item} />)}
+  {
+    obj.bullets && (
       <ul class="mt-1">
-        {obj.lis.map((li) => (
-          <li>
-            <Fragment set:html={li} />
-          </li>
+        {obj.bullets.map((bullet) => (
+          <Bullet slug={bullet} />
         ))}
       </ul>
     )
   }
-
-  {
-    obj.schools &&
-      obj.schools.map((school) => <School obj={school} lang={lang} />)
-  }
-  {
-    obj.projects &&
-      obj.projects.map((project) => <Project obj={project} lang={lang} />)
-  }
-  {obj.items && obj.items.map((item) => <Item obj={item} />)}
 </div>

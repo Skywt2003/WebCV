@@ -24,9 +24,9 @@ const data = await getEntry(entry);
     (data.data.language == "zh" ? " 求职简历" : " Resume")}
 >
   <main class=`container${data.data.language == "en" ? " english" : ""}`>
-    <Header obj={data.data.metadata} lang={data.data.language} />
+    <Header metadata={data.data.metadata} lang={data.data.language} />
     {
-      data.data.sections.map((section: SectionObject) => (
+      data.data.sections.map((section: Section) => (
         <Section obj={section} lang={data.data.language} />
       ))
     }

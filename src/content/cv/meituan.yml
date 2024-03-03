@@ -1,98 +1,40 @@
 language: zh
 metadata:
-  name: 吴天
-  phone: (+86) 133-****-****
-  email: me@skywt.cn
-  # intention: 前端开发
-  photo: /photo.jpg
+  intention: 前端开发
 sections:
   - title: 教育背景
     schools:
-      - name: 湖南大学
-        college: 信息科学与工程学院
-        major: 信息安全专业
-        degree: 本科（在读）
-        date: 2021 年 - 2025 年（预计）
-        majorCourses: 程序设计、算法与数据结构、体系结构、操作系统、数据库系统、计算机网络、编译原理等
-        score: GPA 3.61/4.00，专业排名 21%
+      - hnu
   - title: 专业技能
-    lis:
-      - "<b>语言</b>: C++, JavaScript, TypeScript, HTML/CSS, Python, Swift, PHP"
-      - "<b>框架</b>: Vue.js, React.js, Astro, Tailwind.css, Python Flask, SwiftUI"
-      - "<b>技术</b>: Linux, Docker, Git, ChatGPT"
+    bullets:
+      - languages
+      - frameworks
+      - coding
+      - techs
+      - soft-skills
   - title: 项目经历
     projects:
-      - title: 个人网站及博客 skywt.cn
-        type: 个人项目
-        date: 2017 年 11 月至今
-        tech: Astro, TypeScript, Tailwind.css, CSS, Docker
-        desc: 记录学习、生活、技术分享等内容的个人网站和博客。
-        items:
-          - 网站已运行六年，发布了百余篇文章。
-          - 近乎每年都使用新技术重新设计和重构网站。最新版本使用 Astro、TypeScript 和 Tailwind.css 等技术构建。
-          - 在服务器上部署了数十个自建开源服务，并负责运维。
-      - title: 湖大微生活微信小程序
-        type: 团队项目
-        job: 前端、运维
-        date: 2022 年 3 月 - 2023 年 10 月
-        tech: React.js, Taro, TypeScript, 微信小程序
-        desc: 为湖南大学同学提供课表查看、成绩查询等功能的微信小程序。该项目是湖南大学校学工部下属的“易千网络文化工作室”产品。
-        items:
-          - 参与项目规划和需求评审会议，确定新增功能。
-          - 负责制定部分 API 标准并编写相关文档。
-          - 开发和测试部分前端模块，基于项目现有的 React.js 和 Taro 框架。
-      - title: Typecho 博客主题 Daydream
-        type: 个人项目
-        date: 2022 年 3 月 - 2022 年 10 月
-        tech: PHP, JavaScript, CSS
-        desc: 针对 Typecho 博客系统开发的一套博客主题，集成多种功能。
-        items:
-          - 独立设计主题外观，使用 pico.css 组件库实现网页效果。
-          - 使用 PHP 进行代码实现。
-          - 在 <i class="ri-github-line"></i> GitHub 开源并获得 68 star。
-      - title: 图书管理系统
-        type: 团队项目
-        job: 后端
-        date: 2022 年 2 月 - 2022 年 3 月
-        tech: Python, Flask, MySQL
-        desc: 一个功能完备的图书管理系统。“易千网络文化工作室”实习转正考核项目。
-        items:
-          - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等。负责编写 API 文档。
-          - 负责系统后端开发，基于接口标准，使用 Python Flask 框架进行了对应实现，使用 ORM 操作数据库。
+      - skywt-cn
+      - hnu-wei-life
+      - daydream
+      - lib-backend
   - title: 证书与获奖经历
     items:
-      - title: 中国大学生程序设计竞赛（CCPC）广州站
-        subtitle: 银奖
-        date: 2021 年 11 月
-      - title: CCF 计算机软件能力认证（CSP）
-        date: 2022 年 9 月
-        subtitle: 290 分，全国排名 4.6%
-      - title: 大学英语六级考试（CET6）
-        date: 2023 年 3 月
-        subtitle: 566 分
-      - title: CCF 非专业级软件能力认证提高组（CSP-S）浙江
-        subtitle: 一等奖
-        date: 2019 年 11 月
-        note: 2019 年，由于政策原因，CCF 以 CSP-S 的名义举办了全国青少年信息学奥林匹克联赛（NOIP）。<br />因故， CSP-S 一等奖等同于 NOIP 提高组复赛一等奖。
-      - title: 湖南大学校级三好学生
-        date: 2022 年
-      - title: 湖南大学二等综合奖学金、单项奖学金
-        date: 2022 年、2023 年
+      - ccpc
+      - csp
+      - csp-s
+      - cet6
+      - hnu-meric
+      - scholarship
   - title: 校园经历
     items:
-      - title: 湖南大学信息安全协会（HNUSec）
-        subtitle: 会长
-        date: 2023 年 9 月至今
-      - title: 湖南大学创联学生实验室（前微软俱乐部）
-        subtitle: 主席
-        date: 2023 年 9 月至今
-      - title: 湖南大学信息科学与工程学院辩论队
-        subtitle: 队长
-        date: 2022 年 7 月 - 2023 年 7 月
+      - hnusec
+      - chuanglian
+      - debate-team
   - title: 自我评价
-    lis:
-      - 具备<b>快速学习新技术和工具</b>的能力，对技术充满热情，喜欢深入研究。
-      - 在多年的算法竞赛训练中，建立了<b>扎实的算法基础</b>，对算法与数据结构应用有深入理解和灵活的思维。
-      - 具备良好的<b>技术品味</b>，注重代码质量和系统设计的简洁性等方面。
-      - 拥有出色的<b>沟通和人际交往能力</b>，曾担任社团主席，积累了一定的领导经验。
-      - <b>认同美团的文化与愿景</b>，希望参与创造出色的「科技+零售」体验。
+    bullets:
+      - study-quickly
+      - algorithm-foundation
+      - good-taste
+      - good-communication
+      - meituan

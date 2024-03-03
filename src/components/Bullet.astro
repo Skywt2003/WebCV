@@ -1,0 +1,20 @@
+---
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+import yml from "./config.yml";
+
+const objs = yml.objects.bullets;
+const obj: Bullet = objs.find((o: Bullet) => o.slug == slug);
+
+if (!obj) {
+  console.log("ERROR: Bullet " + slug + " not found.");
+}
+---
+
+<li>
+  <Fragment set:html={obj.content} />
+</li>

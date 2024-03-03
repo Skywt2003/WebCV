@@ -1,10 +1,19 @@
 ---
 interface Props {
-  obj: ProjectObject;
+  slug: string;
   lang: string;
 }
 
-const { obj, lang } = Astro.props;
+const { slug, lang } = Astro.props;
+
+import yml from "./config.yml";
+
+const objs = yml.objects.projects;
+const obj: Project = objs.find((o: Project) => o.slug == slug);
+
+if (!obj) {
+  console.log("ERROR: Project " + slug + " not found.");
+}
 ---
 
 <div class="mt-1">

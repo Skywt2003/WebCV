@@ -6,7 +6,25 @@ declare module "*.yml" {
   export default value;
 }
 
-interface SchoolObject {
+interface Metadata {
+  name: string;
+  phone: string;
+  email: string;
+  intention: string;
+  photo?: string;
+}
+
+interface Section {
+  slug: string;
+  title: string;
+  schools?: [string];
+  projects?: [string];
+  items?: [string];
+  bullets?: [string];
+}
+
+interface School {
+  slug: string;
   name: string;
   college?: string;
   major: string;
@@ -16,14 +34,8 @@ interface SchoolObject {
   score: string;
 }
 
-interface ItemObject {
-  title: string;
-  subtitle?: string;
-  note?: string;
-  date?: string;
-}
-
-interface ProjectObject {
+interface Project {
+  slug: string;
   title: string;
   type: string;
   job?: string;
@@ -33,18 +45,15 @@ interface ProjectObject {
   items?: string[];
 }
 
-interface SectionObject {
+interface Item {
+  slug: string;
   title: string;
-  schools?: [SchoolObject];
-  items?: [ItemObject];
-  projects?: [ProjectObject];
-  lis?: [string];
+  subtitle?: string;
+  note?: string;
+  date?: string;
 }
 
-interface Metadata {
-  name: string;
-  phone: string;
-  email: string;
-  intention: string;
-  photo?: string;
+interface Bullet {
+  slug: string;
+  content: string;
 }

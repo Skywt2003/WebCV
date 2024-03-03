@@ -1,29 +1,38 @@
 ---
 interface Props {
-  obj: Metadata;
+  metadata: Metadata;
   lang: string;
 }
 
-const { obj, lang } = Astro.props;
+const { metadata, lang } = Astro.props;
+
+import yml from "./config.yml";
+
+const def_metadata = yml.metadata;
 ---
 
 <div class="relative mt-16">
   <div>
-    <h1 class="font-bold text-center text-4xl">{obj.name}</h1>
+    <h1 class="font-bold text-center text-4xl">
+      {metadata.name || def_metadata.name}
+    </h1>
     <p class="text-center mt-4">
       <span class="mr-4">
         <i class="ri-phone-line"></i>
-        {obj.phone}
+        {metadata.phone || def_metadata.phone}
       </span>
-      <span><i class="ri-mail-line"></i> {obj.email}</span>
+      <span
+        ><i class="ri-mail-line"></i>
+        {metadata.email || def_metadata.email}</span
+      >
     </p>
 
     <p class="text-center mt-1">
       {
-        obj.intention && (
+        metadata.intention && (
           <>
             <span>{lang == "zh" ? "求职意向：" : "Job Intention: "}</span>
-            <span class="font-kai">{obj.intention}</span>
+            <span class="font-kai">{metadata.intention}</span>
           </>
         )
       }
@@ -31,9 +40,9 @@ const { obj, lang } = Astro.props;
   </div>
 
   {
-    obj.photo && (
+    metadata.photo != "" && (
       <img
-        src={obj.photo}
+        src={metadata.photo || def_metadata.photo}
         alt="My Photo"
         class="w-24 absolute right-0 bottom-0"
       />

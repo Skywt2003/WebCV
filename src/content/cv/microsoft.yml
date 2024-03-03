@@ -1,109 +1,38 @@
 language: en
 metadata:
-  name: Tian Wu
-  phone: (+86) 133-****-****
-  email: me@skywt.cn
   intention: Software Engineering (Internship)
-  photo: /photo.jpg
 sections:
   - title: Education
     schools:
-      - name: Hunan University
-        major: Bachelor of Information Security
-        degree: Undergraduate
-        date: Sept. 2021 - Jun. 2025 (expected)
-        majorCourses: Programming, Algorithms and Data Structures, Computer
-          Architecture, Operating Systems, Database Systems, Computer
-          Networks, Compilers
-        score: 3.6/4.0, (Ranked in the top 21%)
-  - title: Skills
-    lis:
-      - "<b>Languages</b>: C++, JavaScript, TypeScript, HTML/CSS, Python, Swift, PHP"
-      - "<b>Framworks</b>: Vue.js, React.js, Astro, Tailwind.css, Python Flask, SwiftUI"
-      - "<b>Programming</b>: Object-Oriented Programming, Algorithms and Data Structures"
-      - "<b>Techs</b>: Linux, Docker, Git, ChatGPT"
-      - "<b>Soft Skills</b>: Effective Communication, Leadership, Teamwork"
+      - hnu-en
+  - title: Skills & Certificates
+    bullets:
+      - languages-en
+      - frameworks-en
+      - coding-en
+      - techs-en
+      - soft-skills-en
   - title: Professional Experience
     projects:
-      - title: Website & Blog skywt.cn
-        type: Personal Project
-        date: Nov. 2017 - Present
-        tech: Astro, TypeScript, Tailwind.css, CSS, Docker
-        desc: A personal website showcasing my work and interests.
-        items:
-          - Maintained the website for six years, publishing over a hundred articles.
-          - Regularly developed new versions using the latest technologies.
-            The most recent version was built with <b>Astro</b>, <b>TypeScript</b>, and <b>Tailwind.css</b>.
-          - <b>Self-hosted</b> numerous open-source services on the server.
-      - title: HNU Wei Life
-        type: Team Project
-        job: Frontend, O&M
-        date: Mar. 2023 - Oct. 2023
-        tech: React.js, Taro, TypeScript, WeChat Mini Program
-        desc: A WeChat Mini Program designed for HNU students,
-          providing features such as class schedule view and score query.
-        items:
-          - Actively participated in project planning meetings to identify and propose new features.
-          - Established <b>API standards</b> and authored <b>API documentation</b>.
-          - <b>Developed frontend modules</b> using React.js and Taro frameworks.
-          - Ensured the stability of the product since its update.
-      # - title: Daydream
-      #   type: Personal Project
-      #   date: Mar. 2022 - Oct. 2022
-      #   tech: PHP, JavaScript, CSS
-      #   desc: A feature-rich blog theme for the Typecho blog system.
-      #   items:
-      #     - Independently designed the theme's appearance, utilizing the pico.css component library.
-      #     - Implemented the theme using <b>PHP</b>.
-      #     - Open source on <i class="ri-github-line"></i> <b>GitHub</b> and received 68 starts.
-      - title: Library Management System
-        type: Team Project
-        job: Backend
-        date: Feb. 2022 - Mar. 2022
-        tech: Python, Flask, MySQL
-        desc: A comprehensive library management system.
-        items:
-          - Contributed to the software's <b>architecture design</b> by collaborating with team members
-            to determine data storage and API interfaces.
-          - Authored the <b>API documentation</b>.
-          - <b>Developed the backend</b> using Python Flask framwork.
-  - title: Award & Certificates
+      - skywt-cn-en
+      - hnu-wei-life-en
+      - lib-backend-en
+  - title: Award Experience
     items:
-      - title: China Collegiate Programming Contest (CCPC) Guangzhou
-        subtitle: Silver Award
-        date: Nov. 2021
-      - title: CCF Certified Software Professional (CSP)
-        subtitle: 290/500, National Ranking 4.6%
-        date: Sept. 2022
-      - title: National Olympiad in Informatics in Provinces (NOIP) Zhejiang
-        subtitle: First Prize
-        date: Nov. 2019
-      # - title: CCF Unprofessional Certified Software Professional (CSP-S)
-      #   subtitle: first prize
-      #   date: Nov. 2019
-      #   note: "Note: In 2019, for policy reasons, CCF organized the National Olympiad in Informatics in Provinces (NOIP) under the name CSP-S. Therefore, the first prize of CSP-S is equivalent to the first prize of the NOIP."
-      - title: College English Test Level 6 (CET6)
-        subtitle: 566/710
-        date: Mar. 2023
-      - title: Merit Student of HNU
-        date: "2022"
-      - title: Second Class Scholarship & Individual Scholarship of HNU
-        date: 2022, 2023
+      - ccpc-en
+      - csp-en
+      - csp-s-en
+      - cet6-en
+      - hnu-meric-en
+      - scholarship-en
   - title: Campus Experience
     items:
-      - title: HNU Chuanglian Student Lab (formerly Microsoft Club)
-        subtitle: President
-        date: Sept. 2023 - Present
-      - title: Debate Team of HNU CSEE
-        subtitle: Captain
-        date: Jul. 2022 - Jul. 2023
+      - chuanglian-en
+      - debate-team-en
   - title: Self Evaluation
-    lis:
-      - I wholeheartedly embrace <b>Microsoft's culture, values, and commitment to innovation</b>, and I am excited to contribute my skills and passion to its dynamic environment.
-      - I have a strong <b>aptitude for learning</b> and can quickly grasp and apply new technologies and tools.
-        I am passionate about technology and enjoy delving into its intricacies.
-      - I possess a solid fundation in <b>algorithms</b> due to years of training in algorithmic competitions.
-        # This has provided me with a deep understanding of applying algorithms and data structures, as well as fostering adaptable thinking.
-      - I have a strong <b>appreciation</b> for technical excellence and <b>a commitment to code quality and elegant system design</b>.
-      - I excel in <b>communication and interpersonal skills</b> and have demonstrated leadership abilities as the president of student organizations.
-        # I am adept at fostering teamwork and effectively collaborating with team members.
+    bullets:
+      - microsoft
+      - study-quickly-en
+      - algorithm-foundation-en
+      - good-taste-en
+      - good-communication-en
