@@ -9,14 +9,15 @@ sections:
     bullets:
       - languages
       - frameworks
-      - coding
+      # - coding
       - techs
-      - soft-skills
+      # - soft-skills
   - title: 项目经历
     projects:
       - skywt-cn
       - hnu-wei-life
       - daydream
+      - lib-backend
   - title: 证书与获奖经历
     items:
       - ccpc
@@ -28,12 +29,12 @@ sections:
   - title: 校园经历
     items:
       - hnusec
-      - chuanglian
+      # - chuanglian
       - debate-team
   - title: 自我评价
     bullets:
       - study-quickly
       - algorithm-foundation
-      - good-taste
+      - product-sense
       - good-communication
-      - bytedance
+      - bilibili

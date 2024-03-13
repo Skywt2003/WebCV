@@ -17,6 +17,7 @@ sections:
       - skywt-cn
       - hnu-wei-life
       - daydream
+      # - lib-backend
   - title: 证书与获奖经历
     items:
       - ccpc
@@ -36,4 +37,4 @@ sections:
       - algorithm-foundation
       - good-taste
       - good-communication
-      - bytedance
+      - jd

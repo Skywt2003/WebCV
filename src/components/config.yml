@@ -28,29 +28,29 @@ objects:
       title: 个人网站及博客 skywt.cn
       type: 个人项目
       date: 2017 年 11 月至今
-      tech: Astro, TypeScript, Tailwind.css, CSS, Docker
+      tech: Astro.js, React.js, TypeScript, Tailwind.css, CSS, Docker
       desc: 记录学习、生活、技术分享等内容的个人网站和博客。
       items:
         - 网站已运行六年，发布了百余篇文章。
-        - 近乎每年都使用新技术重新设计和重构网站。最新版本使用 Astro、TypeScript 和 Tailwind.css 等技术构建。
+        - 近乎每年都使用新技术重新设计和重构网站。最新版本使用 Astro.js、TypeScript 和 Tailwind.css 等技术构建。
         - 在服务器上部署了数十个自建开源服务，并负责运维。
     - slug: skywt-cn-en
       title: Website & Blog skywt.cn
       type: Personal Project
       date: Nov. 2017 - Present
-      tech: Astro, TypeScript, Tailwind.css, CSS, Docker
+      tech: Astro.js, React.js, TypeScript, Tailwind.css, CSS, Docker
       desc: A personal website showcasing my work and interests.
       items:
         - Maintained the website for six years, publishing over a hundred articles.
         - Regularly developed new versions using the latest technologies.
-          The most recent version was built with <b>Astro</b>, <b>TypeScript</b>, and <b>Tailwind.css</b>.
+          The most recent version was built with <b>Astro.js</b>, <b>TypeScript</b>, and <b>Tailwind.css</b>.
         - <b>Self-hosted</b> numerous open-source services on the server.
     - slug: hnu-wei-life
       title: 湖大微生活微信小程序
       type: 团队项目
       job: 前端、运维
       date: 2022 年 3 月 - 2023 年 10 月
-      tech: React.js, Taro, TypeScript, 微信小程序
+      tech: React.js, Taro, TypeScript, CSS, 微信小程序
       desc: 为湖南大学同学提供课表查看、成绩查询等功能的微信小程序。该项目是湖南大学校学工部下属的“易千网络文化工作室”产品。
       items:
         - 参与项目规划和需求评审会议，确定新增功能。
@@ -61,7 +61,7 @@ objects:
       type: Team Project
       job: Frontend, O&M
       date: Mar. 2023 - Oct. 2023
-      tech: React.js, Taro, TypeScript, WeChat Mini Program
+      tech: React.js, Taro, TypeScript, CSS, WeChat Mini Program
       desc: A WeChat Mini Program designed for HNU students,
         providing features such as class schedule view and score query.
       items:
@@ -73,7 +73,7 @@ objects:
       title: Typecho 博客主题 Daydream
       type: 个人项目
       date: 2022 年 3 月 - 2022 年 10 月
-      tech: PHP, JavaScript, CSS
+      tech: PHP, JavaScript, jQuery, AJAX, CSS
       desc: 针对 Typecho 博客系统开发的一套博客主题，集成多种功能。
       items:
         - 独立设计主题外观，使用 pico.css 组件库实现网页效果。
@@ -83,7 +83,7 @@ objects:
       title: Daydream
       type: Personal Project
       date: Mar. 2022 - Oct. 2022
-      tech: PHP, JavaScript, CSS
+      tech: PHP, JavaScript, jQuery, AJAX, CSS
       desc: A feature-rich blog theme for the Typecho blog system.
       items:
         - Independently designed the theme's appearance, utilizing the pico.css component library.
@@ -183,13 +183,13 @@ objects:
       title: WebCV 简历系统
       type: 个人项目
       date: 2024 年
-      tech: Astro, TypeScript, Tailwind.css, CSS
-      desc: 基于 Astro 的网页简历生成管理系统。
+      tech: Astro.js, TypeScript, Tailwind.css, CSS
+      desc: 基于 Astro.js 的网页简历生成管理系统。
     - slug: webcv-en
       title: WebCV Resume System
       type: Personal Project
       date: "2024"
-      tech: Astro, TypeScript, Tailwind.css, CSS
+      tech: Astro.js, TypeScript, Tailwind.css, CSS
       desc: CV generation tool based on Astro.js.
   items:
     - slug: ccpc
@@ -212,7 +212,7 @@ objects:
       title: CCF 非专业级软件能力认证提高组（CSP-S）
       subtitle: 一等奖
       date: 2019 年 11 月
-      note: 2019 年，由于政策原因，CCF 以 CSP-S 的名义举办了全国青少年信息学奥林匹克联赛（NOIP）。<br />因故， CSP-S 一等奖等同于 NOIP 提高组复赛一等奖。
+      note: 2019 年，由于政策原因，CCF 以 CSP-S 的名义举办了全国青少年信息学奥林匹克联赛（NOIP）。因故， CSP-S 一等奖等同于 NOIP 提高组复赛一等奖。
     - slug: csp-s-en
       title: CCF Unprofessional Certified Software Professional (CSP-S)
       subtitle: first prize
@@ -312,23 +312,23 @@ objects:
     - slug: languages-en
       content: "<b>Languages</b>: C++, JavaScript, TypeScript, HTML/CSS, Python, Swift, PHP"
     - slug: frameworks
-      content: "<b>框架</b>：Vue.js、React.js、Astro.js、Tailwind.css、Python Flask、SwiftUI"
+      content: "<b>框架</b>：React.js、Vue.js、Astro.js、jQuery、Tailwind.css、Python Flask、SwiftUI"
     - slug: frameworks-en
-      content: "<b>Framworks</b>: Vue.js, React.js, Astro.js、Tailwind.css、Python Flask、SwiftUI"
+      content: "<b>Framworks</b>: React.js, Vue.js,Astro.js、jQuery, Tailwind.css、Python Flask、SwiftUI"
     - slug: coding
       content: "<b>编程</b>：面向对象编程、算法与数据结构"
     - slug: coding-en
       content: "<b>Programming</b>: Object-Oriented Programming, Algorithms and Data Structures"
     - slug: techs
-      content: "<b>技术</b>：Linux、Docker、Git、ChatGPT"
+      content: "<b>技术</b>：Linux、Git、ChatGPT、Docker"
     - slug: techs-en
-      content: "<b>Techs</b>: Linux, Docker, Git, ChatGPT"
+      content: "<b>Techs</b>: Linux, Git, ChatGPT, Docker"
     - slug: soft-skills
       content: "<b>软技能</b>：高效沟通、领导力、团队协作"
     - slug: soft-skills-en
       content: "<b>Soft Skills</b>: Effective Communication, Leadership, Teamwork"
     - slug: study-quickly
-      content: 具备<b>快速学习新技术和工具</b>的能力，对技术充满热情，喜欢深入研究。
+      content: 具备<b>快速学习新技术和工具</b>的能力，对技术充满热情，学习适应能力强，喜欢深入研究。
     - slug: study-quickly-en
       content: I have a strong <b>aptitude for learning</b> and can quickly grasp and apply new technologies and tools. I am passionate about technology and enjoy delving into its intricacies.
     - slug: algorithm-foundation
@@ -339,8 +339,12 @@ objects:
       content: 具备良好的<b>技术品味</b>，注重代码质量和系统设计的简洁性等方面。
     - slug: good-taste-en
       content: I have a strong <b>appreciation</b> for technical excellence and <b>a commitment to code quality and elegant system design</b>.
+    - slug: good-aesthetic
+      content: 具备良好的<b>视觉审美</b>，对产品的用户体验有自己的见解。
+    - slug: product-sense
+      content: 具备良好的<b>产品品味</b>，乐于构建优良的产品用户体验，而非机械地完成任务。
     - slug: good-communication
-      content: 拥有出色的<b>沟通和人际交往能力</b>，曾担任社团主席，积累了一定的领导经验。
+      content: 拥有<b>出色的沟通和人际交往能力和强烈的责任心</b>，曾担任社团主席，积累了一定的领导经验。
     - slug: good-communication-en
       content: I excel in <b>communication and interpersonal skills</b> and have demonstrated leadership abilities as the president of student organizations. I am adept at fostering teamwork and effectively collaborating with team members.
     - slug: tencent
@@ -349,6 +353,18 @@ objects:
       content: <b>认同美团的文化与愿景</b>，希望参与创造出色的「科技+零售」体验。
     - slug: bytedance
       content: <b>认同字节跳动的文化与愿景</b>，希望创造出色的产品和体验。
+    - slug: jd
+      content: <b>认同京东的文化与愿景</b>，希望参与创造出色的零售科技体验。
+    - slug: xhs
+      content: <b>认同小红书的文化与愿景</b>，希望参与创造出色的年轻人生活平台。
+    - slug: netease
+      content: <b>认同网易的文化与愿景</b>，希望创造出色的产品和体验。
+    - slug: bilibili
+      content: <b>认同哔哩哔哩的文化与愿景</b>，希望通过出色的产品和体验，为年轻人打造快乐的平台。
+    - slug: xiaomi
+      content: <b>认同小米的文化与愿景</b>，希望创造出色的产品体验。
+    - slug: dingtalk
+      content: <b>认同钉钉产品的使命、文化和愿景</b>，希望打造出色的智能办公协作体验。
     - slug: microsoft
       content: I wholeheartedly embrace <b>Microsoft's culture, values, and commitment to innovation</b>, and I am excited to contribute my skills and passion to its dynamic environment.
     - slug: apple
