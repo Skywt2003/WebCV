@@ -80,9 +80,9 @@ objects:
       # tech: Astro.js, React.js, TypeScript, Tailwind.css, Docker
       desc: 基于 Typecho 的博客系统前端。
       items:
-        - <b>技术栈：<i class="ti ti-brand-astro"></i> Astro.js / <i class="ti ti-brand-react"></i> React.js / <i class="ti ti-brand-nodejs"></i> Node.js / <i class="ti ti-brand-javascript"></i> JavaScript / <i class="ti ti-brand-tailwind"></i> Tailwind</b>。
+        - <b>技术栈：<i class="ti ti-brand-astro"></i> Astro.js / <i class="ti ti-brand-react"></i> React.js / <i class="ti ti-brand-nodejs"></i> Node.js / <i class="ti ti-brand-tailwind"></i> Tailwind</b>。
         - 基于 Typecho 提供的 RESTful API，设计并开发博客系统前端。
-        - 部署在个人博客 skywt.cn，使用 GitHub Actions 进行自动化部署。
+        - 部署在个人博客 <a href="https://skywt.cn/" target="_blank">skywt.cn</a>，使用 GitHub Actions 进行自动化部署。
     - slug: skywt-cn-en
       title: Website & Blog skywt.cn
       type: Personal Project
@@ -96,14 +96,13 @@ objects:
         - <b>Self-hosted</b> numerous open-source services on the server.
     - slug: daydream
       title: Typecho 博客主题 Daydream
-      type: 个人项目
+      type: <i class="ti ti-user"></i> 个人项目
       date: 2022 年 3 月 - 2022 年 10 月
-      tech: JavaScript, jQuery, AJAX, PHP, CSS
-      desc: 针对 Typecho 博客系统开发的一套博客主题，集成多种功能。
+      # tech: JavaScript, jQuery, AJAX, PHP, CSS
+      desc: 针对 Typecho 博客系统开发的一套博客主题，集成多种功能。在 <i class="ti ti-brand-github"></i> GitHub 开源并获得 71 star。
       items:
-        - 独立设计主题外观，使用 pico.css 组件库实现网页效果。
-        - 使用 PHP 进行代码实现。
-        - 在 <i class="ri-github-line"></i> GitHub 开源并获得 70 star。
+        - <b>技术栈：<i class="ti ti-brand-php"></i> PHP / <i class="ti ti-brand-javascript"></i> JavaScript / <i class="ti ti-brand-css3"></i> CSS3</b>
+        - 独立设计主题外观，使用 pico.css 组件库实现网页效果。使用 PHP 进行功能逻辑实现。
     - slug: daydream-en
       title: Daydream
       type: Personal Project
@@ -152,13 +151,14 @@ objects:
       desc: Used for the staff management of QNXG Network Culture Studio of HNU.
     - slug: pasteburn
       title: PasteBurn 阅后即焚
-      type: 个人项目
+      type: <i class="ti ti-user"></i> 个人项目
       date: 2019 年
-      tech: jQuery, CSS, PHP, MySQL
+      # tech: jQuery, CSS, PHP, MySQL
       desc: 支持分享文本，阅后即焚的网页程序。高中课余时间开发。
       items:
+        - <b>技术栈：<i class="ti ti-brand-php"></i> PHP / <i class="ti ti-brand-javascript"></i> JavaScript / <i class="ti ti-file-type-js"></i> jQuery / <i class="ti ti-brand-mysql"></i> MySQL / <i class="ti ti-brand-bootstrap"></i> Bootstrap4</b>
         - 独立设计并使用 PHP 开发了网站的功能，使用 Bootstrap4 进行页面设计，使用 jQuery、AJAX 等实现前端逻辑，后端使用 MySQL 数据库进行存储。
-        - 在 <i class="ri-github-line"></i> GitHub 开源并获得 26 star。
+        - 在 <i class="ti ti-brand-github"></i> GitHub 开源并获得 26 star。
     - slug: pasteburn-en
       title: PasteBurn
       type: Personal Project
@@ -167,13 +167,13 @@ objects:
       desc: Support for sharing text, burn after reading web application. High school spare time development.
     - slug: vuecho
       title: Vuecho 博客系统
-      type: 个人项目
+      type: <i class="ti ti-user"></i> 个人项目
       date: 2022 年
-      tech: Vue.js, JavaScript, Tailwind.css, CSS
+      # tech: Vue.js, JavaScript, Tailwind.css, CSS
       desc: 基于 Vue.js 构建的博客前端，使用 Typecho 博客系统提供的 API。
       items:
-        - 根据 Typecho RestFul APi 插件提供的 API 标准，使用 Vue.js 构建了前端页面。
-        - 使用 axios 进行数据请求，使用 vue-router 进行路由管理。
+        - <b>技术栈：<i class="ti ti-brand-vue"></i> Vue.js / <i class="ti ti-brand-tailwind"></i> Tailwind</b>
+        - 根据 Typecho RestFul APi 插件提供的 API 标准，使用 Vue.js 构建了前端页面。使用 axios 进行数据请求，使用 vue-router 进行路由管理。
         - 基于 Tailwind.css 进行网页设计。
     - slug: vuecho-en
       title: Vuecho Blog System
@@ -185,8 +185,10 @@ objects:
       title: WebCV 简历系统
       type: 个人项目
       date: 2024 年
-      tech: Astro.js, TypeScript, Tailwind.css, CSS
+      # tech: Astro.js, TypeScript, Tailwind.css, CSS
       desc: 基于 Astro.js 的网页简历生成管理系统。
+      items:
+        - <b>技术栈：<i class="ti ti-brand-astro"></i> Astro.js / <i class="ti ti-brand-typescript"></i> TypeScript / <i class="ti ti-brand-tailwind"></i> Tailwind</b>
     - slug: webcv-en
       title: WebCV Resume System
       type: Personal Project

@@ -1,0 +1,47 @@
+language: zh
+metadata:
+  - phone: 133-****-****
+sections:
+  - title: 教育背景
+    schools:
+      - hnu
+  - title: 项目经历
+    projects:
+      - hnu-wei-life
+      - lib-backend
+      - skywt-cn
+      - daydream
+      - pasteburn
+      - vuecho
+      - webcv
+  - title: 证书与获奖经历
+    items:
+      - ccpc
+      - csp
+      - csp-s
+      - cet6
+      - nisp
+      - hnu-ctf
+      - greatwall
+      - math-model
+      - hnu-meric
+      - scholarship
+  - title: 校园经历
+    items:
+      - hnusec
+      - chuanglian
+      - debate-team
+      - orientation-team
+  - title: 专业技能
+    bullets:
+      - languages
+      - frameworks
+      # - coding
+      - techs
+      # - soft-skills
+  - title: 自我评价
+    bullets:
+      - study-quickly
+      - algorithm-foundation
+      - good-aesthetic
+      - good-communication
