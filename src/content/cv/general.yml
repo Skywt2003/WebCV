@@ -1,40 +1,38 @@
 language: zh
 metadata:
-  intention: 前端开发
+  - test: abc
 sections:
   - title: 教育背景
     schools:
       - hnu
-  - title: 专业技能
-    bullets:
-      - languages
-      - frameworks
-      - coding
-      - techs
-      - soft-skills
   - title: 项目经历
     projects:
       - hnu-wei-life
-      # - daydream
       - lib-backend
       - skywt-cn
   - title: 证书与获奖经历
     items:
       - ccpc
       - csp
-      - csp-s
+      # - csp-s
       - cet6
       - hnu-meric
       - scholarship
   - title: 校园经历
     items:
       - hnusec
-      - chuanglian
+      # - chuanglian
       - debate-team
+  - title: 专业技能
+    bullets:
+      - languages
+      - frameworks
+      # - coding
+      - techs
+      # - soft-skills
   - title: 自我评价
     bullets:
       - study-quickly
       - algorithm-foundation
-      - good-taste
+      - good-aesthetic
       - good-communication
-      - tencent

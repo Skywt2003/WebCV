@@ -18,11 +18,7 @@ const { entry } = Astro.props;
 const data = await getEntry(entry);
 ---
 
-<Layout
-  title={data.data.metadata.name +
-    (data.data.metadata.intention ? " " + data.data.metadata.intention : "") +
-    (data.data.language == "zh" ? " 求职简历" : " Resume")}
->
+<Layout title={data.data.language == "zh" ? " 求职简历" : " Resume"}>
   <main class=`container${data.data.language == "en" ? " english" : ""}`>
     <Header metadata={data.data.metadata} lang={data.data.language} />
     {

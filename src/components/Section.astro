@@ -12,9 +12,9 @@ import Item from "./Item.astro";
 import Bullet from "./Bullet.astro";
 ---
 
-<div class="my-2">
+<div class="my-4">
   <h2 class="font-bold text-2xl uppercase">{obj.title}</h2>
-  <hr />
+  <hr class="" />
   {
     obj.schools &&
       obj.schools.map((school) => <School slug={school} lang={lang} />)

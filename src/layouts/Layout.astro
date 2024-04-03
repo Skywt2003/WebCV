@@ -5,8 +5,15 @@ interface Props {
 
 const { title } = Astro.props;
 
+import "@fontsource/noto-serif-sc/200.css";
+import "@fontsource/noto-serif-sc/300.css";
+import "@fontsource/noto-serif-sc/400.css";
+import "@fontsource/noto-serif-sc/500.css";
+import "@fontsource/noto-serif-sc/600.css";
+import "@fontsource/noto-serif-sc/700.css";
+import "@fontsource/noto-serif-sc/900.css";
+import "@tabler/icons-webfont/dist/tabler-icons.min.css";
 import "../styles/global.css";
-import "remixicon/fonts/remixicon.css";
 ---
 
 <!doctype html>
@@ -18,11 +25,6 @@ import "remixicon/fonts/remixicon.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap"
-    />
   </head>
   <body>
     <slot />

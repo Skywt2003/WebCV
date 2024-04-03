@@ -12,8 +12,9 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/noto-serif-sc": "^5.0.11",
+    "@tabler/icons-webfont": "^3.1.0",
     "astro": "^4.2.6",
-    "remixicon": "^4.1.0",
     "tailwindcss-animated": "^1.0.1",
     "typescript": "^5.3.3"
   },

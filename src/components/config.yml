@@ -10,8 +10,8 @@ objects:
       college: 信息科学与工程学院
       major: 信息安全专业
       degree: 本科（在读）
-      date: 2021 年 - 2025 年（预计）
-      majorCourses: 程序设计、算法与数据结构、体系结构、操作系统、数据库系统、计算机网络、编译原理等
+      date: 2021 年 9 月 - 2025 年 6 月
+      majorCourses: 程序设计、算法与数据结构、体系结构、操作系统、数据库系统、计算机网络、网络安全等
       score: GPA 3.61/4.00，专业排名 21%
     - slug: hnu-en
       name: Hunan University
@@ -24,16 +24,65 @@ objects:
         Networks, Compilers
       score: 3.6/4.0, (Ranked in the top 21%)
   projects:
-    - slug: skywt-cn
-      title: 个人网站及博客 skywt.cn
-      type: 个人项目
-      date: 2017 年 11 月至今
-      tech: Astro.js, React.js, TypeScript, Tailwind.css, CSS, Docker
-      desc: 记录学习、生活、技术分享等内容的个人网站和博客。
+    - slug: hnu-wei-life
+      title: 湖大微生活小程序
+      type: <i class="ti ti-users"></i> 团队项目
+      job: 前端开发
+      date: 2022 年 3 月 - 2023 年 10 月
+      # tech: React.js, Taro.js, 微信小程序, TypeScript,
+      desc: 为湖南大学同学提供课表查看、成绩查询等功能的小程序，同时兼容微信、QQ 小程序平台。学生社团产品。
       items:
-        - 网站已运行六年，发布了百余篇文章。
-        - 近乎每年都使用新技术重新设计和重构网站。最新版本使用 Astro.js、TypeScript 和 Tailwind.css 等技术构建。
-        - 在服务器上部署了数十个自建开源服务，并负责运维。
+        - <b>技术栈：<i class="ti ti-brand-react"></i> React.js / <i class="ti ti-layers-intersect"></i> Taro.js / <i class="ti ti-brand-miniprogram"></i> 微信小程序 / <i class="ti ti-brand-typescript"></i> TypeScript</b>。
+        - 参与团队需求评审会议确定新增功能，讨论制定相关 API 标准并编写相关文档。
+        - 基于 Taro.js 和 React.js 框架，开发并测试部分前端页面和模块，构建跨端小程序。
+        - 共开发 5 个页面，实现了工具箱、问题反馈等多个功能，项目上线后稳定运行。
+    - slug: hnu-wei-life-en
+      title: HNU Wei Life
+      type: Team Project
+      job: Frontend, O&M
+      date: Mar. 2023 - Oct. 2023
+      tech: React.js, Taro.js, TypeScript, WeChat Mini Program
+      desc: A WeChat Mini Program designed for HNU students,
+        providing features such as class schedule view and score query.
+      items:
+        - Actively participated in project planning meetings to identify and propose new features.
+        - Established <b>API standards</b> and authored <b>API documentation</b>.
+        - <b>Developed frontend modules</b> using React.js and Taro frameworks.
+        - Ensured the stability of the product since its update.
+    - slug: lib-backend
+      title: 易千图书管理系统
+      type: <i class="ti ti-users"></i> 团队项目
+      job: 后端开发
+      date: 2022 年 2 月 - 2022 年 3 月
+      # tech: Python, Flask, MySQL
+      desc: 功能齐全的前后端分离图书管理系统，实现了图书借阅、书籍信息管理、用户注册登录等多种功能。
+      items:
+        - <b>技术栈：<i class="ti ti-brand-python"></i> Python / <i class="ti ti-pepper"></i> Flask / <i class="ti ti-brand-mysql"></i> MySQL</b>。
+        - 负责共同制定 RESTful API 标准及编写相关文档。
+        - 负责系统后端开发，使用 Python Flask 作为 Web 框架，使用 SQLAlchemy ORM 模块操作 MySQL 数据库，使用 JWT 实现管理用户登录状态。
+        - 共实现 18 个接口，共使用 3 张数据表。
+    - slug: lib-backend-en
+      title: Library Management System
+      type: Team Project
+      job: Backend
+      date: Feb. 2022 - Mar. 2022
+      tech: Python, Flask, MySQL
+      desc: A comprehensive library management system.
+      items:
+        - Contributed to the software's <b>architecture design</b> by collaborating with team members
+          to determine data storage and API interfaces.
+        - Authored the <b>API documentation</b>.
+        - <b>Developed the backend</b> using Python Flask framwork.
+    - slug: skywt-cn
+      title: 博客系统 Daydreamer
+      type: <i class="ti ti-user"></i> 个人项目
+      date: 2023 年 10 月 - 2024 年 3 月
+      # tech: Astro.js, React.js, TypeScript, Tailwind.css, Docker
+      desc: 基于 Typecho 的博客系统前端。
+      items:
+        - <b>技术栈：<i class="ti ti-brand-astro"></i> Astro.js / <i class="ti ti-brand-react"></i> React.js / <i class="ti ti-brand-nodejs"></i> Node.js / <i class="ti ti-brand-javascript"></i> JavaScript / <i class="ti ti-brand-tailwind"></i> Tailwind</b>。
+        - 基于 Typecho 提供的 RESTful API，设计并开发博客系统前端。
+        - 部署在个人博客 skywt.cn，使用 GitHub Actions 进行自动化部署。
     - slug: skywt-cn-en
       title: Website & Blog skywt.cn
       type: Personal Project
@@ -45,35 +94,11 @@ objects:
         - Regularly developed new versions using the latest technologies.
           The most recent version was built with <b>Astro.js</b>, <b>TypeScript</b>, and <b>Tailwind.css</b>.
         - <b>Self-hosted</b> numerous open-source services on the server.
-    - slug: hnu-wei-life
-      title: 湖大微生活微信小程序
-      type: 团队项目
-      job: 前端、运维
-      date: 2022 年 3 月 - 2023 年 10 月
-      tech: React.js, Taro, TypeScript, CSS, 微信小程序
-      desc: 为湖南大学同学提供课表查看、成绩查询等功能的微信小程序。该项目是湖南大学校学工部下属的“易千网络文化工作室”产品。
-      items:
-        - 参与项目规划和需求评审会议，确定新增功能。
-        - 负责制定部分 API 标准并编写相关文档。
-        - 开发和测试部分前端模块，基于项目现有的 React.js 和 Taro 框架。
-    - slug: hnu-wei-life-en
-      title: HNU Wei Life
-      type: Team Project
-      job: Frontend, O&M
-      date: Mar. 2023 - Oct. 2023
-      tech: React.js, Taro, TypeScript, CSS, WeChat Mini Program
-      desc: A WeChat Mini Program designed for HNU students,
-        providing features such as class schedule view and score query.
-      items:
-        - Actively participated in project planning meetings to identify and propose new features.
-        - Established <b>API standards</b> and authored <b>API documentation</b>.
-        - <b>Developed frontend modules</b> using React.js and Taro frameworks.
-        - Ensured the stability of the product since its update.
     - slug: daydream
       title: Typecho 博客主题 Daydream
       type: 个人项目
       date: 2022 年 3 月 - 2022 年 10 月
-      tech: PHP, JavaScript, jQuery, AJAX, CSS
+      tech: JavaScript, jQuery, AJAX, PHP, CSS
       desc: 针对 Typecho 博客系统开发的一套博客主题，集成多种功能。
       items:
         - 独立设计主题外观，使用 pico.css 组件库实现网页效果。
@@ -83,7 +108,7 @@ objects:
       title: Daydream
       type: Personal Project
       date: Mar. 2022 - Oct. 2022
-      tech: PHP, JavaScript, jQuery, AJAX, CSS
+      tech: JavaScript, jQuery, AJAX, PHP, CSS
       desc: A feature-rich blog theme for the Typecho blog system.
       items:
         - Independently designed the theme's appearance, utilizing the pico.css component library.
@@ -125,29 +150,6 @@ objects:
       date: "2023"
       tech: Go, Gin, MySQL
       desc: Used for the staff management of QNXG Network Culture Studio of HNU.
-    - slug: lib-backend
-      title: 图书管理系统
-      type: 团队项目
-      job: 后端
-      date: 2022 年 2 月 - 2022 年 3 月
-      tech: Python, Flask, MySQL
-      desc: 一个功能完备的图书管理系统。“易千网络文化工作室”实习转正考核项目。
-      items:
-        - 参与设计软件架构，与团队成员讨论确定数据存储、API 接口等。
-        - 负责编写 API 文档。
-        - 负责系统后端开发，基于接口标准，使用 Python Flask 框架进行了对应实现，使用 ORM 操作数据库。
-    - slug: lib-backend-en
-      title: Library Management System
-      type: Team Project
-      job: Backend
-      date: Feb. 2022 - Mar. 2022
-      tech: Python, Flask, MySQL
-      desc: A comprehensive library management system.
-      items:
-        - Contributed to the software's <b>architecture design</b> by collaborating with team members
-          to determine data storage and API interfaces.
-        - Authored the <b>API documentation</b>.
-        - <b>Developed the backend</b> using Python Flask framwork.
     - slug: pasteburn
       title: PasteBurn 阅后即焚
       type: 个人项目
@@ -308,19 +310,19 @@ objects:
       date: Sept. 2023
   bullets:
     - slug: languages
-      content: "<b>语言</b>：C++、JavaScript、TypeScript、HTML/CSS、Python、Swift、PHP"
+      content: "<b>语言：<i class='ti ti-brand-cpp'></i> C++ / <i class='ti ti-brand-javascript'></i> JavaScript / <i class='ti ti-brand-typescript'></i> TypeScript / <i class='ti ti-brand-html5'></i> HTML5 / <i class='ti ti-brand-css3'></i> CSS3 / <i class='ti ti-brand-python'></i> Python / <i class='ti ti-brand-swift'></i> Swift / <i class='ti ti-brand-php'></i> PHP</b>"
     - slug: languages-en
       content: "<b>Languages</b>: C++, JavaScript, TypeScript, HTML/CSS, Python, Swift, PHP"
     - slug: frameworks
-      content: "<b>框架</b>：React.js、Vue.js、Astro.js、jQuery、Tailwind.css、Python Flask、SwiftUI"
+      content: "<b>框架：<i class='ti ti-brand-react'></i> React.js / <i class='ti ti-brand-vue'></i> Vue.js / <i class='ti ti-brand-astro'></i> Astro.js / <i class='ti ti-file-type-js'></i> jQuery / <i class='ti ti-brand-tailwind'></i> Tailwind.css / <i class='ti ti-pepper'></i> Python Flask / <i class='ti ti-brand-swift'></i> SwiftUI</b>"
     - slug: frameworks-en
-      content: "<b>Framworks</b>: React.js, Vue.js,Astro.js、jQuery, Tailwind.css、Python Flask、SwiftUI"
+      content: "<b>Framworks</b>: React.js, Vue.js, Astro.js、jQuery, Tailwind.css、Python Flask、SwiftUI"
     - slug: coding
       content: "<b>编程</b>：面向对象编程、算法与数据结构"
     - slug: coding-en
       content: "<b>Programming</b>: Object-Oriented Programming, Algorithms and Data Structures"
     - slug: techs
-      content: "<b>技术</b>：Linux、Git、ChatGPT、Docker"
+      content: "<b>技术：<i class='ti ti-terminal-2'></i> Linux / <i class='ti ti-brand-git'></i> Git / <i class='ti ti-brand-openai'></i> ChatGPT / <i class='ti ti-brand-github-copilot'></i> Copilot / <i class='ti ti-brand-docker'></i> Docker</b>"
     - slug: techs-en
       content: "<b>Techs</b>: Linux, Git, ChatGPT, Docker"
     - slug: soft-skills
@@ -365,6 +367,8 @@ objects:
       content: <b>认同小米的文化与愿景</b>，希望创造出色的产品体验。
     - slug: dingtalk
       content: <b>认同钉钉产品的使命、文化和愿景</b>，希望打造出色的智能办公协作体验。
+    - slug: aliyun
+      content: <b>认同阿里云的文化与愿景</b>，希望参与创造出色的云体验。
     - slug: microsoft
       content: I wholeheartedly embrace <b>Microsoft's culture, values, and commitment to innovation</b>, and I am excited to contribute my skills and passion to its dynamic environment.
     - slug: apple

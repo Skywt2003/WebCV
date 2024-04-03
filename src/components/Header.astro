@@ -11,41 +11,44 @@ import yml from "./config.yml";
 const def_metadata = yml.metadata;
 ---
 
-<div class="relative mt-16">
-  <div>
-    <h1 class="font-bold text-center text-4xl">
+<div class="mt-16">
+  <div class="relative">
+    <h1 class="font-black text-center text-4xl">
       {metadata.name || def_metadata.name}
     </h1>
     <p class="text-center mt-4">
       <span class="mr-4">
-        <i class="ri-phone-line"></i>
+        <i class="ti ti-phone"></i>
         {metadata.phone || def_metadata.phone}
       </span>
-      <span
-        ><i class="ri-mail-line"></i>
-        {metadata.email || def_metadata.email}</span
+      <a href={"mailto:" + (metadata.email || def_metadata.email)}
+        ><i class="ti ti-mail"></i>
+        {metadata.email || def_metadata.email}</a
       >
     </p>
 
-    <p class="text-center mt-1">
+    <!-- <p class="text-center mt-1">
       {
         metadata.intention && (
           <>
-            <span>{lang == "zh" ? "求职意向：" : "Job Intention: "}</span>
+            <span>
+              <i class="ti ti-briefcase" />
+              {lang == "zh" ? "求职意向：" : "Job Intention: "}
+            </span>
             <span class="font-kai">{metadata.intention}</span>
           </>
         )
       }
-    </p>
-  </div>
+    </p> -->
 
-  {
-    metadata.photo != "" && (
-      <img
-        src={metadata.photo || def_metadata.photo}
-        alt="My Photo"
-        class="w-24 absolute right-0 bottom-0"
-      />
-    )
-  }
+    {
+      metadata.photo != "" && (
+        <img
+          src={metadata.photo || def_metadata.photo}
+          alt="My Photo"
+          class="w-24 absolute right-0 top-1/2  -translate-y-2/3"
+        />
+      )
+    }
+  </div>
 </div>
