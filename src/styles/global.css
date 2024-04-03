@@ -27,3 +27,15 @@ li {
 b {
     @apply font-semibold;
 }
+
+.english .font-kai {
+    @apply italic font-serif;
+}
+
+.english {
+    @apply font-serif;
+}
+
+.link {
+    @apply underline;
+}

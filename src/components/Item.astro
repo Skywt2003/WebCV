@@ -1,28 +1,19 @@
 ---
 interface Props {
-  slug: string;
+  item: Item;
 }
 
-const { slug } = Astro.props;
-
-import yml from "./config.yml";
-
-const objs = yml.objects.items;
-const obj: Item = objs.find((o: Item) => o.slug == slug);
-
-if (!obj) {
-  console.log("ERROR: Item " + slug + " not found.");
-}
+const { item } = Astro.props;
 ---
 
 <div class="mt-1">
-  <span class="font-semibold mr-4">{obj.title}</span>
-  <span class="font-kai">{obj.subtitle}{obj.note && "^"}</span>
-  <span class="date">{obj.date}</span>
+  <span class="font-bold mr-4">{item.title}</span>
+  <span class="font-kai">{item.subtitle}{item.note && "^"}</span>
+  <span class="date">{item.date}</span>
   {
-    obj.note && (
+    item.note && (
       <span class="font-light text-sm text-gray-500 ml-4 block">
-        ^<Fragment set:html={obj.note} />
+        ^<Fragment set:html={item.note} />
       </span>
     )
   }

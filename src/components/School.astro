@@ -1,37 +1,27 @@
 ---
 interface Props {
-  slug: string;
-  lang: string;
+  school: School;
+  lang: "zh" | "en";
 }
 
-const { slug, lang } = Astro.props;
-
-import yml from "./config.yml";
-
-const objs = yml.objects.schools;
-const obj: School = objs.find((o: School) => o.slug == slug);
-
-if (!obj) {
-  console.log("ERROR: School " + slug + " not found.");
-}
+const { school, lang } = Astro.props;
 ---
 
 <div class="mt-1">
-  <span class="font-bold mr-4">{obj.name}</span>{
-    obj.college && <span class="mr-4">{obj.college}</span>
-  }<span class="mr-4">{obj.major}</span><span class="font-kai"
-    >{obj.degree}</span
-  ><span class="date">{obj.date}</span>
+  <span class="font-bold mr-4">{school.name}</span>{
+    school.college && <span class="mr-4">{school.college}</span>
+  }<span class="mr-4">{school.major}</span><span class="font-kai"
+    >{school.degree}</span
+  ><span class="date">{school.date}</span>
   <ul>
     <li>
-      <span>{lang == "zh" ? "主修课程：" : "Major Courses: "}</span><span
-        class="font-kai">{obj.majorCourses}</span
-      >
+      <span class="font-semibold"
+        >{lang === "zh" ? "主修课程：" : "Major Courses: "}</span
+      ><span class="font-kai">{school.majorCourses}</span>
     </li>
     <li>
-      <span>{lang == "zh" ? "学业成绩：" : "GPA: "}</span><span class="font-kai"
-        >{obj.score}</span
-      >
+      <span class="font-semibold">{lang === "zh" ? "学业成绩：" : "GPA: "}</span
+      ><span class="font-kai">{school.score}</span>
     </li>
   </ul>
 </div>
