@@ -24,10 +24,6 @@ li {
     @apply float-end text-sm font-light text-gray-500;
 }
 
-b {
-    @apply font-semibold;
-}
-
 .english .font-kai {
     @apply italic font-serif;
 }
