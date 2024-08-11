@@ -1,29 +1,35 @@
 ---
 interface Props {
   section: Section;
-  lang: "zh" | "en";
 }
 
-const { section, lang } = Astro.props;
+const { section } = Astro.props;
 
 import School from "./School.astro";
+import Internship from "./Internship.astro";
 import Project from "./Project.astro";
 import Item from "./Item.astro";
 import Bullet from "./Bullet.astro";
+import Table from "./Table.astro";
 ---
 
 <div class="my-4">
-  <h2 class="font-extrabold text-2xl uppercase">{section.title}</h2>
-  <hr />
+  <h2 class="font-extrabold text-2xl uppercase font-ding text-[#007fff]">
+    {section.title}
+  </h2>
   {
     section.schools &&
-      section.schools.map((school) => <School school={school} lang={lang} />)
+      section.schools.map((school) => <School school={school} />)
+  }
+  {
+    section.internships &&
+      section.internships.map((internship) => (
+        <Internship internship={internship} />
+      ))
   }
   {
     section.projects &&
-      section.projects.map((project) => (
-        <Project project={project} lang={lang} />
-      ))
+      section.projects.map((project) => <Project project={project} />)
   }
   {section.items && section.items.map((item) => <Item item={item} />)}
   {
@@ -35,4 +41,5 @@ import Bullet from "./Bullet.astro";
       </ul>
     )
   }
+  {section.table && <Table />}
 </div>

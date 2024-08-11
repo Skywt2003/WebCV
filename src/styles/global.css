@@ -1,15 +1,20 @@
 :root {
-    @apply font-serif;
-    font-family: 'Noto Serif SC', serif;
     font-size: 18px;
+    @apply bg-gray-100;
+    @apply dark:bg-neutral-900 dark:text-gray-200;
 }
 
 .container {
     @apply max-w-4xl m-auto;
 }
 
-.font-kai {
-    font-family: "KaiTi", "KaiTiGB2312", "STKaiti";
+@font-face {
+    font-family: 'DingTalkJBT';
+    src: url('/DingTalkJBT.ttf') format('truetype');
+}
+
+.font-ding {
+    font-family: 'DingTalkJBT';
 }
 
 ul {
@@ -21,15 +26,7 @@ li {
 }
 
 .date {
-    @apply float-end text-sm font-light text-gray-500;
-}
-
-.english .font-kai {
-    @apply italic font-serif;
-}
-
-.english {
-    @apply font-serif;
+    @apply text-sm font-light text-gray-500;
 }
 
 .link {

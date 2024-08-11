@@ -1,0 +1,30 @@
+---
+import * as TablerIcons from "@tabler/icons-react";
+import type { FC } from "react";
+
+interface Props {
+  name: string;
+  class?: string;
+  size?: string;
+}
+
+interface IconProps {
+  className: string;
+  stroke: number;
+  size: string;
+}
+
+const { name, class: className = "", size = "1rem" } = Astro.props;
+
+const IconComponent = TablerIcons[
+  `Icon${name}` as keyof typeof TablerIcons
+] as FC<IconProps>;
+---
+
+<IconComponent
+  className={["inline-block", "align-text-bottom"]
+    .concat(className.split(" "))
+    .join(" ")}
+  stroke={2}
+  size={size}
+/>

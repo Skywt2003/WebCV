@@ -4,48 +4,43 @@ interface Props {
 }
 
 const { metadata } = Astro.props;
+
+import Icon from "./Icon.astro";
 ---
 
 <div class="mt-16">
-  <div class="relative">
-    <h1 class="font-black text-center text-4xl">
-      {metadata.name}
-    </h1>
-    <div class="mt-4">
-      <div
-        class="grid grid-cols-2 grid-rows-2 gap-x-8 font-semibold w-fit mx-auto"
-      >
+  <div class="flex items-end">
+    <h1 class="font-black text-5xl font-ding mr-4">{metadata.name}</h1>
+    <span class="font-ding">@skywt2003</span>
+    <div class="flex-1"></div>
+    <div class="font-ding">
+      <div class="grid grid-cols-2 grid-rows-2 gap-x-8 w-fit">
         <span class="w-fit">
-          <i class="ti ti-phone"></i> 电话：{metadata.phone}
-        </span>
-        <span class="w-fit">
-          <i class="ti ti-mail"></i> 邮箱：<a
-            href={"mailto:" + metadata.email}
-            class="link">{metadata.email}</a
+          <Icon name="Phone" size="1.2rem" />
+          <span>电话：</span><a href={"tel:+86" + metadata.phone} class="link"
+            >{metadata.phone}</a
           >
         </span>
         <span class="w-fit">
-          <i class="ti ti-news"></i> 博客：<a
-            href={"https://" + metadata.blog}
-            class="link">{metadata.blog}</a
+          <Icon name="Mail" size="1.2rem" />
+          <span>邮箱：</span><a href={"mailto:" + metadata.email} class="link"
+            >{metadata.email}</a
           >
         </span>
         <span class="w-fit">
-          <i class="ti ti-brand-github"></i> GitHub：<a
+          <Icon name="News" size="1.2rem" />
+          <span>博客：</span><a href={"https://" + metadata.blog} class="link"
+            >{metadata.blog}</a
+          >
+        </span>
+        <span class="w-fit">
+          <Icon name="BrandGithub" size="1.2rem" />
+          <span>GitHub：</span><a
             href={"https://github.com/" + metadata.github}
             class="link">{metadata.github}</a
           >
         </span>
       </div>
     </div>
-    {
-      metadata.photo !== "none" && (
-        <img
-          src={metadata.photo}
-          alt="My Photo"
-          class="w-24 absolute right-0 bottom-0"
-        />
-      )
-    }
   </div>
 </div>

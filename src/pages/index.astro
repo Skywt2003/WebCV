@@ -1,51 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import LoadingCover from "../components/LoadingCover";
 ---
 
 <Layout title="我的简历">
-  <main
-    class="w-full sm:w-3/4 mx-auto h-svh flex flex-col justify-center px-4 fade-in"
-  >
-    <h1 class="text-6xl drop-shadow-xl font-black leading-snug my-8">
-      我渴望<br />加入伟大的事业，
-      <br /> 为这个世界创造价值。
+  <main class="h-svh flex flex-col justify-center items-center px-4">
+    <LoadingCover />
+    <h3 class="text-2xl drop-shadow-xl font-black font-ding text-gray-500">
+      @SkyWT
+    </h3>
+    <h1
+      class="text-6xl drop-shadow-xl font-black mt-6 font-ding text-[#007fff]"
+    >
+      持续进步·创造价值
     </h1>
-    <p>
-      <span class="font-bold">请输入简历访问代码。</span>暂时只支持桌面端访问。
-    </p>
-    <form id="form" class="my-8 align-bottom">
-      <input
-        id="input"
-        type="text"
-        pattern="[a-z]*"
-        placeholder="public"
-        title="请输入小写字母组成的简历代码"
-        class="p-2 transition-all border rounded-s font-mono shadow-lg shadow-gray-100"
-        required
-      /><input
-        id="open-btn"
-        type="submit"
-        class="p-2 transition-all border-y border-r rounded-e hover:bg-gray-200 select-none cursor-pointer shadow-lg shadow-gray-100"
-      />
-    </form>
+    <div class="mt-8 flex">
+      <a href="/general" target="_self" class="button"> 中文 </a>
+      <a href="/en" target="_self" class="button"> English </a>
+    </div>
   </main>
-
   <footer class="w-full fixed bottom-0 text-center my-4 text-gray-400">
     <p>
-      © 2017-2024 <a href="https://skywt.cn/" class="hover:underline">SkyWT</a>
+      © 2017-2024
+      <a href="https://skywt.cn/" class="footerlink">SkyWT</a> /
+      <a href="https://github.com/Skywt2003/WebCV" class="footerlink">WebCV</a> /
+      <a href="https://beian.miit.gov.cn/" class="footerlink" target="_blank"
+        >浙ICP备2021019606号</a
+      >
     </p>
   </footer>
-
-  <script>
-    const form = document.getElementById("form") as HTMLFormElement;
-    const input = document.getElementById("input") as HTMLInputElement;
-    const btn = document.getElementById("open-btn") as HTMLElement;
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      window.open(input.value, "_self");
-    });
-  </script>
 </Layout>
 
 <style>
@@ -53,19 +36,14 @@ import Layout from "../layouts/Layout.astro";
     @apply animate-fade-up animate-ease-in-out animate-duration-[800ms];
   }
 
-  :root {
-    font-size: 16px;
+  .button {
+    @apply w-28 text-center;
+    @apply block mx-4 p-2 transition-all bg-white hover:bg-gray-200;
+    @apply shadow-lg shadow-gray-200 hover:shadow-none;
+    @apply active:scale-95;
   }
 
-  @screen sm {
-    :root {
-      font-size: 17px;
-    }
-  }
-
-  @screen md {
-    :root {
-      font-size: 18px;
-    }
+  .footerlink {
+    @apply hover:underline;
   }
 </style>

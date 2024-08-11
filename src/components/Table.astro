@@ -1,0 +1,156 @@
+---
+// interface Props {
+
+// }
+
+// const {  } = Astro.props;
+
+import Techs from "./Techs.astro";
+---
+
+<table class="w-full mt-2">
+  <tr>
+    <th></th>
+    <th>
+      <span class="font-ding text-lg mr-2">😎 熟练掌握</span>
+      <span class="text-sm font-light">有较丰富使用经验，能够立即上手</span>
+    </th>
+    <th>
+      <span class="font-ding text-lg mr-2">🤔 有所接触</span>
+      <span class="text-sm font-light">有一定使用经验，能够快速学习掌握</span>
+    </th>
+  </tr>
+  <tr>
+    <td>🎨 前端技术</td>
+    <td>
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "BrandHtml5", name: "HTML5" },
+          { icon: "BrandCss3", name: "CSS3" },
+          { icon: "BrandJavascript", name: "JavaScript" },
+          { icon: "BrandTypescript", name: "TypeScript" },
+        ]}
+      />
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "BrandReact", name: "React.js" },
+          { icon: "BrandNextjs", name: "Next.js" },
+          { icon: "BrandAstro", name: "Astro.js" },
+        ]}
+      />
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "Package", name: "Webpack" },
+          { icon: "LetterB", name: "Babel" },
+          { icon: "BrandSass", name: "Sass" },
+          { icon: "BrandTailwind", name: "Tailwind.css" },
+        ]}
+      />
+    </td>
+    <td>
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "BrandVue", name: "Vue.js" },
+          { icon: "BrandVite", name: "Vite.js" },
+        ]}
+      />
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "BrandMiniprogram", name: "小程序" },
+          { icon: "LayersIntersect", name: "Taro.js" },
+          { icon: "BrandReactNative", name: "React Native" },
+        ]}
+      />
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "BrandSwift", name: "Swift" },
+          { icon: "BrandSwift", name: "SwiftUI" },
+        ]}
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>🗄️ 后端技术</td>
+    <td>
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "BrandNodejs", name: "Node.js" },
+          { icon: "Ikosaedr", name: "Koa.js" },
+          { icon: "CodeMinus", name: "TypeORM" },
+        ]}
+      />
+    </td>
+    <td>
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "BrandPython", name: "Python" },
+          { icon: "Copyright", name: "C / C++" },
+          { icon: "BrandPhp", name: "PHP" },
+        ]}
+      />
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "DatabaseSearch", name: "SQL" },
+          { icon: "BrandMysql", name: "MySQL" },
+          { icon: "FileTypeSql", name: "SQLite" },
+          { icon: "Database", name: "Postgres" },
+        ]}
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>🎛️ 运维技术</td>
+    <td>
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "Terminal2", name: "Linux" },
+          { icon: "BrandDocker", name: "Docker" },
+          { icon: "Server", name: "Caddy" },
+          { icon: "BrandGithub", name: "GitHub Actions" },
+        ]}
+      />
+    </td>
+    <td>
+      <Techs
+        class="justify-center"
+        techs={[
+          { icon: "Server", name: "Nginx" },
+          { icon: "Cube", name: "Kubernetes" },
+          { icon: "Terminal2", name: "PVE" },
+        ]}
+      />
+    </td>
+  </tr>
+</table>
+
+<style>
+  table,
+  th,
+  td {
+    @apply border border-gray-500 text-center;
+  }
+
+  th,
+  td {
+    @apply px-2;
+  }
+
+  td:first-child {
+    font-family: "DingTalkJBT";
+    @apply text-lg;
+  }
+
+  td {
+    @apply text-sm;
+  }
+</style>

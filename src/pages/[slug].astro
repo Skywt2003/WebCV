@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Section from "../components/Section.astro";
+import LoadingCover from "../components/LoadingCover";
 
 const { entry } = Astro.props;
 
@@ -19,11 +20,12 @@ const data = await getEntry(entry);
 ---
 
 <Layout title={data.data.language === "zh" ? " 求职简历" : " Resume"}>
-  <main class=`container${data.data.language === "en" ? " english" : ""}`>
+  <main class="container">
+    <LoadingCover />
     <Header metadata={data.data.metadata} />
     {
       data.data.sections.map((section: Section) => (
-        <Section section={section} lang={data.data.language} />
+        <Section section={section} />
       ))
     }
   </main>

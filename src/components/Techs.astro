@@ -1,0 +1,21 @@
+---
+interface Props {
+  techs: Tech[];
+  class?: string;
+}
+
+const { techs, class: className = "" } = Astro.props;
+
+import Icon from "./Icon.astro";
+---
+
+<div class={["flex"].concat(className.split(" ")).join(" ")}>
+  {
+    techs.map((tech) => (
+      <div class="mx-1 text-sm font-bold">
+        {tech.icon && <Icon name={tech.icon} />}
+        {tech.name}
+      </div>
+    ))
+  }
+</div>

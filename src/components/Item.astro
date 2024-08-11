@@ -6,15 +6,9 @@ interface Props {
 const { item } = Astro.props;
 ---
 
-<div class="mt-1">
-  <span class="font-bold mr-4">{item.title}</span>
-  <span class="font-kai">{item.subtitle}{item.note && "^"}</span>
+<div class="mt-1 flex items-baseline">
+  <span class="font-bold mr-4 font-ding text-lg">{item.title}</span>
+  <span class="font-ding">{item.subtitle}</span>
+  <span class="flex-1"></span>
   <span class="date">{item.date}</span>
-  {
-    item.note && (
-      <span class="font-light text-sm text-gray-500 ml-4 block">
-        ^<Fragment set:html={item.note} />
-      </span>
-    )
-  }
 </div>

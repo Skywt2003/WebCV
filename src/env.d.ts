@@ -18,9 +18,12 @@ interface Metadata {
 interface Section {
   title: string;
   schools?: [School];
+  internships?: [Internship];
   projects?: [Project];
   items?: [Item];
   bullets?: [string];
+  table?: boolean;
+  icon?: string;
 }
 
 interface School {
@@ -29,8 +32,16 @@ interface School {
   major: string;
   degree?: string;
   date: string;
-  majorCourses: string;
-  score: string;
+  items?: string[];
+}
+
+interface Internship {
+  name: string;
+  department: string;
+  job: string;
+  date: string;
+  techs?: Tech[];
+  items?: string[];
 }
 
 interface Project {
@@ -39,13 +50,27 @@ interface Project {
   job?: string;
   date?: string;
   desc: string;
-  // tech: string;
+  techs?: Tech[];
   items?: string[];
 }
 
 interface Item {
   title: string;
   subtitle?: string;
-  note?: string;
   date?: string;
+}
+
+interface Tech {
+  icon?: string;
+  name: string;
+}
+
+// interface TableRow {
+//   name: string;
+//   items: string[];
+// }
+interface Table {
+  // headers: string[];
+  // subHeaders: string[];
+  // rows: TableRow[];
 }

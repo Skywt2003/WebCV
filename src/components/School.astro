@@ -1,27 +1,28 @@
 ---
+import Bullet from "./Bullet.astro";
+
 interface Props {
   school: School;
-  lang: "zh" | "en";
 }
 
-const { school, lang } = Astro.props;
+const { school } = Astro.props;
 ---
 
 <div class="mt-1">
-  <span class="font-bold mr-4">{school.name}</span>{
-    school.college && <span class="mr-4">{school.college}</span>
-  }<span class="mr-4">{school.major}</span><span class="font-kai"
-    >{school.degree}</span
-  ><span class="date">{school.date}</span>
-  <ul>
-    <li>
-      <span class="font-semibold"
-        >{lang === "zh" ? "主修课程：" : "Major Courses: "}</span
-      ><span class="font-kai">{school.majorCourses}</span>
-    </li>
-    <li>
-      <span class="font-semibold">{lang === "zh" ? "学业成绩：" : "GPA: "}</span
-      ><span class="font-kai">{school.score}</span>
-    </li>
-  </ul>
+  <div class="flex items-baseline">
+    <span class="font-bold text-lg font-ding mr-4">{school.name}</span>
+    <span class="font-ding">{school.college}</span>
+    <span class="flex-1"></span>
+    <span class="date">{school.date}</span>
+  </div>
+  <span class="mr-4">{school.major}</span><span>{school.degree}</span>
+  {
+    school.items && (
+      <ul>
+        {school.items.map((bullet) => (
+          <Bullet bullet={bullet} />
+        ))}
+      </ul>
+    )
+  }
 </div>
