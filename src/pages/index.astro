@@ -14,9 +14,11 @@ import LoadingCover from "../components/LoadingCover";
     >
       持续进步·创造价值
     </h1>
-    <div class="mt-8 flex">
-      <a href="/general" target="_self" class="button"> 中文 </a>
-      <a href="/en" target="_self" class="button"> English </a>
+    <div class="mt-12 flex">
+      <a href="/general" target="_self" class="button button__enabled">
+        中文
+      </a>
+      <a target="_self" class="button button__disabled"> English </a>
     </div>
   </main>
   <footer class="w-full fixed bottom-0 text-center my-4 text-gray-400">
@@ -38,9 +40,19 @@ import LoadingCover from "../components/LoadingCover";
 
   .button {
     @apply w-28 text-center;
-    @apply block mx-4 p-2 transition-all bg-white hover:bg-gray-200;
-    @apply shadow-lg shadow-gray-200 hover:shadow-none;
+    @apply block mx-4 p-2 transition-all;
+  }
+
+  .button__enabled {
+    @apply shadow-md;
+    @apply bg-white hover:bg-gray-200 hover:shadow-none;
     @apply active:scale-95;
+  }
+
+  .button__disabled {
+    @apply cursor-not-allowed;
+    @apply text-gray-500;
+    @apply bg-gray-200;
   }
 
   .footerlink {
