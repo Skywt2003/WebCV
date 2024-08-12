@@ -1,0 +1,21 @@
+---
+import ItemsCopy from "./Items.astro";
+
+interface Props {
+  items: (string | string[])[];
+}
+
+const { items } = Astro.props;
+---
+
+<ul>
+  {
+    items.map((item) =>
+      Array.isArray(item) ? (
+        <ItemsCopy items={item} />
+      ) : (
+        <li>{<Fragment set:html={item} />}</li>
+      ),
+    )
+  }
+</ul>

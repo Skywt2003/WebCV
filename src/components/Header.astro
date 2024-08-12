@@ -1,26 +1,22 @@
 ---
+import Icon from "./Icon.astro";
+
 interface Props {
   metadata: Metadata;
 }
 
 const { metadata } = Astro.props;
-
-import Icon from "./Icon.astro";
 ---
 
 <div class="mt-16">
-  <div class="flex items-end">
-    <h1 class="font-black text-5xl font-ding mr-4">{metadata.name}</h1>
-    <span class="font-ding">@skywt2003</span>
+  <div class="flex items-end flex-wrap">
+    <h1 class="font-black text-5xl font-ding mr-4 text-nowrap">
+      {metadata.name}
+    </h1>
+    <span class="font-ding text-nowrap">{metadata.id}</span>
     <div class="flex-1"></div>
-    <div class="font-ding">
-      <div class="grid grid-cols-2 grid-rows-2 gap-x-8 w-fit">
-        <span class="w-fit">
-          <Icon name="Phone" size="1.2rem" />
-          <span>电话：</span><a href={"tel:+86" + metadata.phone} class="link"
-            >{metadata.phone}</a
-          >
-        </span>
+    <div class="font-ding text-nowrap">
+      <div class="grid grid-cols-2 grid-rows-2 gap-x-2 w-fit">
         <span class="w-fit">
           <Icon name="Mail" size="1.2rem" />
           <span>邮箱：</span><a href={"mailto:" + metadata.email} class="link"
@@ -28,10 +24,14 @@ import Icon from "./Icon.astro";
           >
         </span>
         <span class="w-fit">
-          <Icon name="News" size="1.2rem" />
-          <span>博客：</span><a href={"https://" + metadata.blog} class="link"
-            >{metadata.blog}</a
+          <Icon name="Phone" size="1.2rem" />
+          <span>电话：</span><a href={"tel:+86" + metadata.phone} class="link"
+            >{metadata.phone}</a
           >
+        </span>
+        <span class="w-fit">
+          <Icon name="BrandWechat" size="1.2rem" />
+          <span>微信：</span><a class="link">{metadata.wechat}</a>
         </span>
         <span class="w-fit">
           <Icon name="BrandGithub" size="1.2rem" />

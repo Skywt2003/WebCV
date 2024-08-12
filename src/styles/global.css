@@ -1,34 +1,34 @@
 :root {
-    font-size: 18px;
-    @apply bg-gray-100;
-    @apply dark:bg-neutral-900 dark:text-gray-200;
+  font-size: 18px;
+  @apply bg-gray-100;
+  @apply dark:bg-neutral-900 dark:text-gray-200;
 }
 
 .container {
-    @apply max-w-4xl m-auto;
+  @apply max-w-4xl mx-auto;
 }
 
 @font-face {
-    font-family: 'DingTalkJBT';
-    src: url('/DingTalkJBT.ttf') format('truetype');
+  font-family: 'DingTalkJBT';
+  src: url('/DingTalkJBT.ttf') format('truetype');
 }
 
 .font-ding {
-    font-family: 'DingTalkJBT';
+  font-family: 'DingTalkJBT';
 }
 
 ul {
-    @apply ml-6;
+  @apply ml-6;
 }
 
 li {
-    @apply list-item list-disc;
+  @apply list-item list-disc;
 }
 
 .date {
-    @apply text-sm font-light text-gray-500;
+  @apply text-sm font-light text-gray-500;
 }
 
 .link {
-    @apply underline;
+  @apply underline;
 }

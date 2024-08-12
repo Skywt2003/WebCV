@@ -1,16 +1,12 @@
 ---
+import Project from "./Project.astro";
+import Table from "./Table.astro";
+
 interface Props {
   section: Section;
 }
 
 const { section } = Astro.props;
-
-import School from "./School.astro";
-import Internship from "./Internship.astro";
-import Project from "./Project.astro";
-import Item from "./Item.astro";
-import Bullet from "./Bullet.astro";
-import Table from "./Table.astro";
 ---
 
 <div class="my-4">
@@ -18,28 +14,8 @@ import Table from "./Table.astro";
     {section.title}
   </h2>
   {
-    section.schools &&
-      section.schools.map((school) => <School school={school} />)
-  }
-  {
-    section.internships &&
-      section.internships.map((internship) => (
-        <Internship internship={internship} />
-      ))
-  }
-  {
     section.projects &&
       section.projects.map((project) => <Project project={project} />)
-  }
-  {section.items && section.items.map((item) => <Item item={item} />)}
-  {
-    section.bullets && (
-      <ul class="mt-1">
-        {section.bullets.map((bullet) => (
-          <Bullet bullet={bullet} />
-        ))}
-      </ul>
-    )
   }
   {section.table && <Table />}
 </div>

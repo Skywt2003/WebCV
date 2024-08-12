@@ -1,12 +1,12 @@
 ---
+import Icon from "./Icon.astro";
+
 interface Props {
   techs: Tech[];
   class?: string;
 }
 
 const { techs, class: className = "" } = Astro.props;
-
-import Icon from "./Icon.astro";
 ---
 
 <div class={["flex"].concat(className.split(" ")).join(" ")}>
