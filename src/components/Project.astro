@@ -1,4 +1,5 @@
 ---
+import Icon from "./Icon.astro";
 import Items from "./Items.astro";
 import Techs from "./Techs.astro";
 
@@ -24,6 +25,11 @@ const { project } = Astro.props;
   {
     (project.caption || project.techs) && (
       <div class="flex flex-wrap items-baseline">
+        {project.icon && (
+          <div class="mr-1">
+            <Icon name={project.icon} size="1.2rem" class="block" />
+          </div>
+        )}
         {project.caption && <div class="mr-4">{project.caption}</div>}
         {project.techs && <Techs techs={project.techs} />}
       </div>
@@ -31,7 +37,7 @@ const { project } = Astro.props;
   }
   {
     project.items && (
-      <div class="mt-1">
+      <div>
         <Items items={project.items} />
       </div>
     )

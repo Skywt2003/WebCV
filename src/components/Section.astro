@@ -13,6 +13,7 @@ const { section } = Astro.props;
   <h2 class="font-extrabold text-2xl uppercase font-ding text-[#007fff]">
     {section.title}
   </h2>
+  <hr class="mt-1 border-[#007fff]" />
   {
     section.projects &&
       section.projects.map((project) => <Project project={project} />)

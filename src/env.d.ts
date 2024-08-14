@@ -28,6 +28,7 @@ interface Project {
   subtitle?: string;
   desc?: string;
   date?: string;
+  icon?: string;
   caption?: string;
   techs?: Tech[];
   items?: (string | string[])[];
