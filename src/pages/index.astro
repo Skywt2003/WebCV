@@ -7,7 +7,11 @@ import LoadingCover from "../components/LoadingCover";
   <main class="main">
     <LoadingCover />
     <h3 class="subhero">@SkyWT</h3>
-    <h1 class="hero">持续进步·创造价值</h1>
+    <h1 class="hero">
+      持续进步<span class="hidden sm:inline">·</span><br
+        class="sm:hidden"
+      />创造价值
+    </h1>
     <div class="buttons">
       <a href="/general" target="_self" class="button">中文</a>
       <a target="_self" class="button button__disabled">English</a>
@@ -17,10 +21,7 @@ import LoadingCover from "../components/LoadingCover";
     <p>
       © 2017-2024
       <a href="https://skywt.cn/" class="link">SkyWT</a> /
-      <a href="https://github.com/Skywt2003/WebCV" class="link">WebCV</a> /
-      <a href="https://beian.miit.gov.cn/" class="link" target="_blank"
-        >浙ICP备2021019606号</a
-      >
+      <a href="https://github.com/Skywt2003/WebCV" class="link">WebCV</a>
     </p>
   </footer>
 </Layout>
@@ -38,7 +39,7 @@ import LoadingCover from "../components/LoadingCover";
     }
 
     .hero {
-      @apply text-6xl drop-shadow-xl font-black mt-6 font-ding text-[#007fff];
+      @apply text-6xl drop-shadow-xl font-black mt-6 font-ding text-[#007fff] leading-normal;
     }
 
     .buttons {
