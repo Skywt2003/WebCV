@@ -22,7 +22,7 @@ sections:
     projects:
       - title: 阿里巴巴集团 - 钉钉（中国）信息技术有限公司
         subtitle: 套件技术 / 智能财务
-        date: 2024 年 7 月 - 至今
+        date: 2024 年 7 月 - 2024 年 9 月
         icon: Code
         caption: 前端开发实习生
         techs:
@@ -82,7 +82,7 @@ sections:
           - <b>我的工作：</b>
           - - 基于 Astro.js 构建前端，博客部分在服务器端静态生成；使用 React.js 构建评论区等部分。
             - 基于 Koa.js 框架构建后端，使用 TypeORM 框架操作 Postgres 数据库。使用 Docker 进行容器化。使用 GitHub Actions 进行自动化部署。
-          - <b>成果展示：</b>个人网站 <b><a href="https://skywt.cn/" target="_blank" class="link">skywt.cn<i class="ti ti-external-link"></i></a></b>。
+          - <b>成果展示：</b>个人网站 <b><a href="https://skywt.cn/" target="_blank" class="link">skywt.cn<i class="ti ti-external-link"></i></a></b>，<i class="ti ti-brand-github"></i> <a href="https://github.com/Skywt2003/Daydreamer" target="_blank" class="link">前端源码仓库<i class="ti ti-external-link"></i></a>，<i class="ti ti-brand-github"></i><a href="https://github.com/Skywt2003/Daydreamer-backend" target="_blank" class="link">后端源码仓库<i class="ti ti-external-link"></i></a>。
   - title: 技术栈
     table: true
   - title: 证书与获奖经历

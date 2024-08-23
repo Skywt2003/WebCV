@@ -5,7 +5,8 @@
 }
 
 .container {
-  @apply max-w-4xl mx-auto;
+  @apply mx-4;
+  @apply max-w-4xl lg:mx-auto;
 }
 
 @font-face {
