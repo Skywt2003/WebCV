@@ -6,21 +6,22 @@ declare module "*.yml" {
   export default value;
 }
 
-interface Metadata {
+interface Header {
   name: string;
-  id: string;
-  phone: string;
-  email: string;
-  github: string;
-  blog: string;
-  wechat: string;
-  photo?: string;
+  metas: Meta[];
+}
+
+interface Meta {
+  icon: string;
+  name: string;
+  content: string;
+  link?: string;
 }
 
 interface Section {
   title: string;
   projects: Project[];
-  table: Table[];
+  table: Table;
 }
 
 interface Project {
@@ -40,4 +41,11 @@ interface Tech {
 }
 
 interface Table {
+  rows: string[];
+  cols: string[];
+  cells: TableLines[][];
+}
+
+interface TableLines {
+  lines: Tech[][];
 }

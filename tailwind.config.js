@@ -4,5 +4,14 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [
+    require("tailwindcss-animated"),
+    ({ addComponents, theme }) => {
+      addComponents({
+        ".font-ding": {
+          fontFamily: "DingTalkJBT",
+        },
+      });
+    },
+  ],
 };

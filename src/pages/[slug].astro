@@ -19,14 +19,26 @@ const { entry } = Astro.props;
 const data = await getEntry(entry);
 ---
 
-<Layout title={data.data.language === "zh" ? " 求职简历" : " Resume"}>
+<Layout title="WebCV">
   <main class="container">
     <LoadingCover />
-    <Header metadata={data.data.metadata} />
-    {
-      data.data.sections.map((section: Section) => (
-        <Section section={section} />
-      ))
-    }
+    <div class="content">
+      <Header header={data.data.header} />
+      {
+        data.data.sections.map((section: Section) => (
+          <Section section={section} />
+        ))
+      }
+    </div>
   </main>
 </Layout>
+
+<style lang="scss">
+  .container {
+    // @apply w-full flex justify-center;
+    @apply max-w-4xl mx-auto;
+    .content {
+      @apply mx-4 sm:mx-8;
+    }
+  }
+</style>

@@ -9,14 +9,26 @@ interface Props {
 const { section } = Astro.props;
 ---
 
-<div class="my-4">
-  <h2 class="font-extrabold text-2xl uppercase font-ding text-[#007fff]">
+<div class="section">
+  <h2 class="title">
     {section.title}
   </h2>
-  <hr class="mt-1 border-[#007fff]" />
+  <hr class="divider" />
   {
     section.projects &&
       section.projects.map((project) => <Project project={project} />)
   }
-  {section.table && <Table />}
+  {section.table && <Table table={section.table} />}
 </div>
+
+<style lang="scss">
+  .section {
+    @apply my-4;
+    .title {
+      @apply font-extrabold text-2xl uppercase font-ding text-[#007fff];
+    }
+    .divider {
+      @apply mt-1 border-[#007fff];
+    }
+  }
+</style>

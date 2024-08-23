@@ -1,12 +1,20 @@
-metadata:
+header:
   name: 吴天
-  id: "@skywt2003"
-  phone: 133-****-****
-  email: me@skywt.cn
-  photo: /photo.jpg
-  github: Skywt2003
-  blog: skywt.cn/blog
-  wechat: skywt2003
+  metas:
+    - icon: Mail
+      name: 邮箱：
+      content: me@skywt.cn
+      link: mailto:me@skywt.cn
+    - icon: Phone
+      name: 电话：
+      content: 133-****-****
+    - icon: BrandWechat
+      name: 微信：
+      content: Skywt2003
+    - icon: BrandGithub
+      name: GitHub：
+      content: Skywt2003
+      link: https://github.com/Skywt2003
 sections:
   - title: 教育背景
     projects:
@@ -84,7 +92,91 @@ sections:
             - 基于 Koa.js 框架构建后端，使用 TypeORM 框架操作 Postgres 数据库。使用 Docker 进行容器化。使用 GitHub Actions 进行自动化部署。
           - <b>成果展示：</b>个人网站 <b><a href="https://skywt.cn/" target="_blank" class="link">skywt.cn<i class="ti ti-external-link"></i></a></b>，<i class="ti ti-brand-github"></i> <a href="https://github.com/Skywt2003/Daydreamer" target="_blank" class="link">前端源码仓库<i class="ti ti-external-link"></i></a>，<i class="ti ti-brand-github"></i><a href="https://github.com/Skywt2003/Daydreamer-backend" target="_blank" class="link">后端源码仓库<i class="ti ti-external-link"></i></a>。
   - title: 技术栈
-    table: true
+    table:
+      rows:
+        - 前端技术
+        - 后端技术
+        - 运维技术
+      cols:
+        - 较熟练掌握
+        - 有所接触
+      cells:
+        - - lines:
+              - - icon: BrandHtml5
+                  name: HTML5
+                - icon: BrandCss3
+                  name: CSS3
+                - icon: BrandJavascript
+                  name: JavaScript
+                - icon: BrandTypescript
+                  name: TypeScript
+              - - icon: BrandReact
+                  name: React.js
+                - icon: BrandNextjs
+                  name: Next.js
+                - icon: BrandAstro
+                  name: Astro.js
+              - - icon: Package
+                  name: Webpack
+                - icon: LetterB
+                  name: Babel
+                - icon: BrandSass
+                  name: Sass
+                - icon: BrandTailwind
+                  name: Tailwind.css
+          - lines:
+              - - icon: BrandVue
+                  name: Vue.js
+                - icon: BrandVite
+                  name: Vite.js
+              - - icon: BrandMiniprogram
+                  name: 小程序
+                - icon: LayersIntersect
+                  name: Taro.js
+                - icon: BrandReactNative
+                  name: React Native
+              - - icon: BrandSwift
+                  name: Swift
+                - icon: BrandSwift
+                  name: SwiftUI
+        - - lines:
+              - - icon: BrandNodejs
+                  name: Node.js
+                - icon: Ikosaedr
+                  name: Koa.js
+                - icon: CodeMinus
+                  name: TypeORM
+          - lines:
+              - - icon: BrandPython
+                  name: Python
+                - icon: Copyright
+                  name: C / C++
+                - icon: BrandPhp
+                  name: PHP
+              - - icon: DatabaseSearch
+                  name: SQL
+                - icon: BrandMysql
+                  name: MySQL
+                - icon: FileTypeSql
+                  name: SQLite
+                - icon: Database
+                  name: Postgres
+        - - lines:
+              - - icon: Terminal2
+                  name: Linux
+                - icon: BrandDocker
+                  name: Docker
+                - icon: Server
+                  name: Caddy
+                - icon: BrandGithub
+                  name: GitHub Actions
+          - lines:
+              - - icon: Server
+                  name: Nginx
+                - icon: Cube
+                  name: Kubernetes
+                - icon: Terminal2
+                  name: PVE
   - title: 证书与获奖经历
     projects:
       - title: 中国大学生程序设计竞赛（CCPC）广州站

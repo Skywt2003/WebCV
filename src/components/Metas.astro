@@ -1,0 +1,41 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+  metas: Meta[];
+}
+
+const { metas } = Astro.props;
+---
+
+<div class="metas">
+  {
+    metas.map((meta) => (
+      <span class="meta">
+        <Icon name={meta.icon} size="1.2rem" />
+        <span>{meta.name}</span>
+        {meta.link ? (
+          <a href={meta.link} class="link">
+            {meta.content}
+          </a>
+        ) : (
+          meta.content
+        )}
+      </span>
+    ))
+  }
+</div>
+
+<style lang="scss">
+  .metas {
+    @apply grid gap-x-2 w-fit;
+    @apply grid-cols-1 grid-rows-4;
+    @apply sm:grid-cols-2 sm:grid-rows-2;
+    .meta {
+      @apply w-fit;
+    }
+    .link {
+      @apply underline;
+    }
+  }
+</style>

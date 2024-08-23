@@ -1,46 +1,36 @@
 ---
-import Icon from "./Icon.astro";
+import Metas from "./Metas.astro";
 
 interface Props {
-  metadata: Metadata;
+  header: Header;
 }
 
-const { metadata } = Astro.props;
+const { header } = Astro.props;
 ---
 
-<div class="mt-16">
-  <div class="flex items-end flex-wrap">
-    <h1 class="font-black text-5xl font-ding mr-4 text-nowrap">
-      {metadata.name}
-    </h1>
-    <!-- <span class="font-ding text-nowrap">{metadata.id}</span> -->
-    <div class="flex-1"></div>
-    <div class="font-ding text-nowrap">
-      <div class="grid grid-cols-2 grid-rows-2 gap-x-2 w-fit">
-        <span class="w-fit">
-          <Icon name="Mail" size="1.2rem" />
-          <span>邮箱：</span><a href={"mailto:" + metadata.email} class="link"
-            >{metadata.email}</a
-          >
-        </span>
-        <span class="w-fit">
-          <Icon name="Phone" size="1.2rem" />
-          <span>电话：</span><a href={"tel:+86" + metadata.phone} class="link"
-            >{metadata.phone}</a
-          >
-        </span>
-        <span class="w-fit">
-          <Icon name="BrandWechat" size="1.2rem" />
-          <span>微信：</span><a class="link">{metadata.wechat}</a>
-        </span>
-        <span class="w-fit">
-          <Icon name="BrandGithub" size="1.2rem" />
-          <span>GitHub：</span><a
-            href={"https://github.com/" + metadata.github}
-            class="link">{metadata.github}</a
-          >
-        </span>
-      </div>
-    </div>
+<div class="header">
+  <h1 class="name">
+    {header.name}
+  </h1>
+  <div class="info">
+    <Metas metas={header.metas} />
   </div>
 </div>
+
+<style lang="scss">
+  .header {
+    @apply mt-16;
+    @apply flex;
+    @apply flex-col items-center;
+    @apply sm:flex-row sm:items-end sm:justify-between;
+
+    .name {
+      @apply font-black text-5xl font-ding mr-4 text-nowrap;
+    }
+
+    .info {
+      @apply mt-4 sm:mt-0;
+      @apply font-ding text-nowrap;
+    }
+  }
+</style>

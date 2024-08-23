@@ -4,58 +4,67 @@ import LoadingCover from "../components/LoadingCover";
 ---
 
 <Layout title="我的简历">
-  <main class="h-svh flex flex-col justify-center items-center px-4">
+  <main class="main">
     <LoadingCover />
-    <h3 class="text-2xl drop-shadow-xl font-black font-ding text-gray-500">
-      @SkyWT
-    </h3>
-    <h1
-      class="text-6xl drop-shadow-xl font-black mt-6 font-ding text-[#007fff]"
-    >
-      持续进步·创造价值
-    </h1>
-    <div class="mt-12 flex">
-      <a href="/general" target="_self" class="button button__enabled">
-        中文
-      </a>
-      <a target="_self" class="button button__disabled"> English </a>
+    <h3 class="subhero">@SkyWT</h3>
+    <h1 class="hero">持续进步·创造价值</h1>
+    <div class="buttons">
+      <a href="/general" target="_self" class="button">中文</a>
+      <a target="_self" class="button button__disabled">English</a>
     </div>
   </main>
-  <footer class="w-full fixed bottom-0 text-center my-4 text-gray-400">
+  <footer class="footer">
     <p>
       © 2017-2024
-      <a href="https://skywt.cn/" class="footerlink">SkyWT</a> /
-      <a href="https://github.com/Skywt2003/WebCV" class="footerlink">WebCV</a> /
-      <a href="https://beian.miit.gov.cn/" class="footerlink" target="_blank"
+      <a href="https://skywt.cn/" class="link">SkyWT</a> /
+      <a href="https://github.com/Skywt2003/WebCV" class="link">WebCV</a> /
+      <a href="https://beian.miit.gov.cn/" class="link" target="_blank"
         >浙ICP备2021019606号</a
       >
     </p>
   </footer>
 </Layout>
 
-<style>
-  .fade-in {
-    @apply animate-fade-up animate-ease-in-out animate-duration-[800ms];
+<style lang="scss">
+  .main {
+    @apply h-svh flex flex-col justify-center items-center px-4;
+
+    .fade-in {
+      @apply animate-fade-up animate-ease-in-out animate-duration-[800ms];
+    }
+
+    .subhero {
+      @apply text-2xl drop-shadow-xl font-black font-ding text-gray-500;
+    }
+
+    .hero {
+      @apply text-6xl drop-shadow-xl font-black mt-6 font-ding text-[#007fff];
+    }
+
+    .buttons {
+      @apply mt-12 flex;
+      .button {
+        @apply block mx-4 p-2 w-28 rounded shadow-md;
+        @apply transition-all;
+        @apply text-center select-none;
+        @apply bg-white hover:bg-gray-200;
+        @apply dark:bg-neutral-800 dark:hover:bg-neutral-950;
+        @apply hover:shadow-none active:scale-95;
+        &__disabled {
+          @apply text-gray-500 bg-gray-200;
+          @apply dark:bg-neutral-700 dark:hover:bg-neutral-700;
+          @apply active:scale-100;
+          @apply cursor-not-allowed shadow-none;
+        }
+      }
+    }
   }
 
-  .button {
-    @apply w-28 text-center;
-    @apply block mx-4 p-2 transition-all;
-  }
-
-  .button__enabled {
-    @apply shadow-md;
-    @apply bg-white hover:bg-gray-200 hover:shadow-none;
-    @apply active:scale-95;
-  }
-
-  .button__disabled {
-    @apply cursor-not-allowed;
-    @apply text-gray-500;
-    @apply bg-gray-200;
-  }
-
-  .footerlink {
-    @apply hover:underline;
+  .footer {
+    @apply w-full fixed bottom-0 text-center my-4 text-gray-400;
+    .link {
+      @apply no-underline;
+      @apply hover:underline;
+    }
   }
 </style>

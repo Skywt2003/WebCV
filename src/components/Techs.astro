@@ -9,13 +9,30 @@ interface Props {
 const { techs, class: className = "" } = Astro.props;
 ---
 
-<div class={["flex"].concat(className.split(" ")).join(" ")}>
+<div class:list={["techs"].concat(className.split(" "))}>
   {
     techs.map((tech) => (
-      <div class="mx-1 text-sm font-bold">
-        {tech.icon && <Icon name={tech.icon} />}
-        {tech.name}
+      <div class="tech">
+        {tech.icon && (
+          <div>
+            <Icon name={tech.icon} />
+          </div>
+        )}
+        <span class="label">{tech.name}</span>
       </div>
     ))
   }
 </div>
+
+<style lang="scss">
+  .techs {
+    @apply flex flex-wrap;
+    .tech {
+      @apply flex items-baseline;
+      @apply mx-1 text-sm font-bold;
+      .label {
+        @apply ml-0.5 text-nowrap;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,14 @@
+:root {
+  font-size: 18px;
+  @apply bg-gray-100;
+  @apply dark:bg-neutral-900 dark:text-gray-200;
+}
+
+@font-face {
+  font-family: "DingTalkJBT";
+  src: url("/DingTalkJBT.ttf") format("truetype");
+}
+
+.link {
+  @apply underline;
+}
